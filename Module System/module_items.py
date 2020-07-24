@@ -32,12 +32,12 @@ imodbits_plate  = imodbit_cracked | imodbit_rusty | imodbit_battered | imodbit_c
 imodbits_polearm = imodbit_cracked | imodbit_bent | imodbit_balanced
 imodbits_shield  = imodbit_cracked | imodbit_battered |imodbit_thick | imodbit_reinforced
 imodbits_sword   = imodbit_rusty | imodbit_chipped | imodbit_balanced |imodbit_tempered | imodbit_fine
-imodbits_sword_high   = imodbit_rusty | imodbit_chipped | imodbit_balanced |imodbit_tempered|imodbit_masterwork | imodbit_fine
+imodbits_sword_high   = imodbit_rusty | imodbit_chipped | imodbit_balanced |imodbit_tempered|imodbit_mainwork | imodbit_fine
 imodbits_axe   = imodbit_rusty | imodbit_chipped | imodbit_heavy
 imodbits_mace   = imodbit_rusty | imodbit_chipped | imodbit_heavy
 imodbits_pick   = imodbit_rusty | imodbit_chipped | imodbit_balanced | imodbit_heavy
-imodbits_bow = imodbit_cracked | imodbit_bent | imodbit_strong |imodbit_masterwork
-imodbits_crossbow = imodbit_cracked | imodbit_bent | imodbit_masterwork
+imodbits_bow = imodbit_cracked | imodbit_bent | imodbit_strong |imodbit_mainwork
+imodbits_crossbow = imodbit_cracked | imodbit_bent | imodbit_mainwork
 imodbits_missile   = imodbit_bent | imodbit_large_bag | imodbit_fine
 imodbits_thrown   = imodbit_bent | imodbit_heavy| imodbit_balanced| imodbit_large_bag
 imodbits_thrown_minus_heavy = imodbit_bent | imodbit_balanced| imodbit_large_bag
@@ -155,7 +155,7 @@ items = [
  ["book_leadership","The Life of Alixenus the Great", [("book_d",0)], itp_type_book, 0, 4200,weight(2)|abundance(100),imodbits_none],
  ["book_intelligence","Essays on Logic", [("book_e",0)], itp_type_book, 0, 2900,weight(2)|abundance(100),imodbits_none],
  ["book_trade","A Treatise on the Value of Things", [("book_f",0)], itp_type_book, 0, 3100,weight(2)|abundance(100),imodbits_none],
- ["book_weapon_mastery", "On the Art of Fighting with Swords", [("book_d",0)], itp_type_book, 0, 4200,weight(2)|abundance(100),imodbits_none],
+ ["book_weapon_mainy", "On the Art of Fighting with Swords", [("book_d",0)], itp_type_book, 0, 4200,weight(2)|abundance(100),imodbits_none],
  ["book_engineering","Method of Mechanical Theorems", [("book_open",0)], itp_type_book, 0, 4000,weight(2)|abundance(100),imodbits_none],
 
 #Reference books
@@ -1249,9 +1249,9 @@ items = [
 ["khergit_bow2",         "Khergit Bow", [("khergit_bow2",0),("khergit_bow2_case", ixmesh_carry)], itp_type_bow |itp_merchandise|itp_primary|itp_two_handed,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 
  680 , weight(3.9)|difficulty(3)|spd_rtng(53) | shoot_speed(76) |accuracy(86) | thrust_damage(24 ,pierce),imodbits_bow , [], [fac_kingdom_3]],
 ["strong_bow",         "Strong Bow", [("strong_bow",0),("strong_bow_case", ixmesh_carry)], itp_type_bow |itp_merchandise|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 
- 690 , weight(4.0)|difficulty(3)|spd_rtng(49) | shoot_speed(78) |accuracy(86) | thrust_damage(25 ,pierce),imodbit_cracked | imodbit_bent | imodbit_masterwork , [], [fac_kingdom_2]],
+ 690 , weight(4.0)|difficulty(3)|spd_rtng(49) | shoot_speed(78) |accuracy(86) | thrust_damage(25 ,pierce),imodbit_cracked | imodbit_bent | imodbit_mainwork , [], [fac_kingdom_2]],
 ["strong_bow2",         "Strong Bow", [("strong_bow2",0),("strong_bow2_case", ixmesh_carry)], itp_type_bow |itp_merchandise|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn, 
- 690 , weight(4.0)|difficulty(3)|spd_rtng(49) | shoot_speed(78) |accuracy(86) | thrust_damage(25 ,pierce),imodbit_cracked | imodbit_bent | imodbit_masterwork , [], [fac_kingdom_2]],
+ 690 , weight(4.0)|difficulty(3)|spd_rtng(49) | shoot_speed(78) |accuracy(86) | thrust_damage(25 ,pierce),imodbit_cracked | imodbit_bent | imodbit_mainwork , [], [fac_kingdom_2]],
 ["war_bow",         "War Bow", [("war_bow",0),("war_bow_carry",ixmesh_carry)],itp_type_bow|itp_merchandise|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 
  930 , weight(4.7)|difficulty(4)|spd_rtng(42) | shoot_speed(81) |accuracy(79) | thrust_damage(30 ,pierce),imodbits_bow , [], [fac_kingdom_2]],
 ["war_bow2",         "War Bow", [("war_bow2",0),("war_bow2_carry",ixmesh_carry)],itp_type_bow|itp_merchandise|itp_primary|itp_two_handed ,itcf_shoot_bow|itcf_carry_bow_back, 

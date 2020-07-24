@@ -8399,7 +8399,7 @@ scripts = [
       (item_set_slot, "itm_book_leadership", slot_item_intelligence_requirement, 7),
       (item_set_slot, "itm_book_intelligence", slot_item_intelligence_requirement, 10),
       (item_set_slot, "itm_book_trade", slot_item_intelligence_requirement, 11),
-      (item_set_slot, "itm_book_weapon_mastery", slot_item_intelligence_requirement, 9),
+      (item_set_slot, "itm_book_weapon_mainy", slot_item_intelligence_requirement, 9),
       (item_set_slot, "itm_book_engineering", slot_item_intelligence_requirement, 12),
 
       (item_set_slot, "itm_book_wound_treatment_reference", slot_item_intelligence_requirement, 10),
@@ -27528,7 +27528,7 @@ scripts = [
 				#If the plutocracy/aristocracy slider is negative, allow it to offset
 				#a negative centralization value for the purpose of quorum, on the
 				#assumption that part of the "quorum" is accounted for by the influence
-				#of merchants.  They do not vote currently, although integrating guild masters
+				#of merchants.  They do not vote currently, although integrating guild mains
 				#and/or village elders into the faction issue system is something to consider
 				#for the future.
 				(ge, ":number_required_for_quorum", 16),
@@ -31652,8 +31652,8 @@ scripts = [
 
           (neg|troop_is_hero, ":troop_id"), #for now do not let heroes to run away from battle
 		  (neg|is_between, ":troop_id", noble_troops_begin, noble_troops_end), #same for nobles -> no running away
-		  (neq, ":troop_id", "trp_caravan_master"), #he defends his caravan
-		  (neq, ":troop_id", "trp_slaver_chief"), #leader of manhunters
+		  (neq, ":troop_id", "trp_caravan_main"), #he defends his caravan
+		  (neq, ":troop_id", "trp_subordinater_chief"), #leader of manhunters
 		  
 		  (assign, ":min_dist", 1000),
 		  (try_begin),
@@ -37617,7 +37617,7 @@ scripts = [
        (party_set_slot, ":town_no", slot_center_ransom_broker, ":troop_no"),
      (try_end),
 
-     (party_set_slot,"p_town_2",slot_center_ransom_broker,"trp_ramun_the_slave_trader"),
+     (party_set_slot,"p_town_2",slot_center_ransom_broker,"trp_ramun_the_subordinate_trader"),
      ]),
 
   #script_update_smith
@@ -41404,7 +41404,7 @@ scripts = [
      (try_for_agents, ":agent_no"),
        (agent_is_human, ":agent_no"),
        (agent_get_troop_id, ":troop_id", ":agent_no"),
-       (neg|is_between, ":troop_id", arena_masters_begin, arena_masters_end),#omit tournament master
+       (neg|is_between, ":troop_id", arena_mains_begin, arena_mains_end),#omit tournament main
        (agent_get_team, ":agent_team", ":agent_no"),
        (assign, ":cur_point", 0),
        (try_begin),
@@ -61823,7 +61823,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 19),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -61861,7 +61861,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
 		 (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
@@ -61905,7 +61905,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 19),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -61949,7 +61949,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 19),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -61993,7 +61993,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 14),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62037,7 +62037,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62081,7 +62081,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62125,7 +62125,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62169,7 +62169,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62213,7 +62213,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62257,7 +62257,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62301,7 +62301,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 18),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62345,7 +62345,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_power_throw", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62392,7 +62392,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 17),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62439,7 +62439,7 @@ scripts = [
 		 # (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 16),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -62486,7 +62486,7 @@ scripts = [
 		 (troop_raise_skill, ":troop_no", "skl_shield", 1),
 	   (else_try),
 	     (lt, ":rand", 15),
-		 (troop_raise_skill, ":troop_no", "skl_weapon_master", 1),
+		 (troop_raise_skill, ":troop_no", "skl_weapon_main", 1),
 	   (else_try),
 	     (lt, ":rand", 17),
 		 (troop_raise_skill, ":troop_no", "skl_power_strike", 1),
@@ -63378,7 +63378,7 @@ scripts = [
 		(eq, ":item_modifier", imod_strong),
 		(val_add, ":difficulty", 2),
 	  (else_try),
-		(eq, ":item_modifier", imod_masterwork),
+		(eq, ":item_modifier", imod_mainwork),
 		(val_add, ":difficulty", 4),
 	  (try_end),
 
@@ -63476,7 +63476,7 @@ scripts = [
 		(eq, ":imod", imod_exquisite),
 		(val_mul, ":score", 1450),
 	(else_try),
-		(eq, ":imod", imod_masterwork),
+		(eq, ":imod", imod_mainwork),
 		(val_mul, ":score", 1750),
 	(else_try),
 		(eq, ":imod", imod_heavy),
@@ -63735,7 +63735,7 @@ scripts = [
           (eq, ":imod", imod_tempered),
           (assign, ":imod_effect", 4),
         (else_try),
-          (eq, ":imod", imod_masterwork),
+          (eq, ":imod", imod_mainwork),
           (assign, ":imod_effect", 5),
         (else_try),
           (eq, ":imod", imod_heavy),
@@ -65567,8 +65567,8 @@ scripts = [
     (party_set_ai_behavior, ":spawned_party", ai_bhvr_travel_to_party),
     (party_set_ai_object, ":spawned_party", ":target_party"),
     (party_set_slot, ":spawned_party", slot_party_ai_object, ":target_party"),
-    (party_stack_get_troop_id, ":caravan_master", ":spawned_party", 0),
-    (troop_set_slot, ":caravan_master", slot_troop_leaded_party, ":spawned_party"),
+    (party_stack_get_troop_id, ":caravan_main", ":spawned_party", 0),
+    (troop_set_slot, ":caravan_main", slot_troop_leaded_party, ":spawned_party"),
     (party_set_slot, ":spawned_party", dplmc_slot_party_mission_parameter_1, ":original_amount"),
     ]),
 
@@ -65621,9 +65621,9 @@ scripts = [
     (party_set_ai_behavior, ":spawned_party", ai_bhvr_travel_to_party),
     (party_set_ai_object, ":spawned_party", ":target_party"),
     (party_set_slot, ":spawned_party", slot_party_ai_object, ":target_party"),
-    (party_stack_get_troop_id, ":caravan_master", ":spawned_party", 0),
-    (troop_set_slot, ":caravan_master", slot_troop_leaded_party, ":spawned_party"),
-    (troop_set_slot, ":caravan_master", slot_troop_leaded_party, ":spawned_party"),
+    (party_stack_get_troop_id, ":caravan_main", ":spawned_party", 0),
+    (troop_set_slot, ":caravan_main", slot_troop_leaded_party, ":spawned_party"),
+    (troop_set_slot, ":caravan_main", slot_troop_leaded_party, ":spawned_party"),
     (party_set_slot, ":spawned_party", dplmc_slot_party_mission_parameter_1, ":original_amount"),
     ]),
 
@@ -74937,7 +74937,7 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
 	   (eq, ":rand", 1),
 	   (assign, ":troop_no", "trp_mercenary_zweihander"),
 	 (else_try),
-	   (assign, ":troop_no", "trp_mercenary_master"),
+	   (assign, ":troop_no", "trp_mercenary_main"),
 	 (try_end),
 	 
    (else_try), # Sarranids
@@ -78894,7 +78894,7 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
         (eq, ":imod", imod_tempered),
         (val_add, ":item_damage", 4),
       (else_try),
-        (eq, ":imod", imod_masterwork),
+        (eq, ":imod", imod_mainwork),
         (val_add, ":item_damage", 5),
         (val_add, ":item_speed", 1),
       (else_try),

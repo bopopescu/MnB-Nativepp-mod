@@ -11489,7 +11489,7 @@ presentations = [
 		  (assign, ":price_of_secondary_input", reg10),
 
 		  (store_sub, ":town_order", ":center_no", towns_begin),
-		  (store_add, ":craftsman_troop", ":town_order", "trp_town_1_master_craftsman"),
+		  (store_add, ":craftsman_troop", ":town_order", "trp_town_1_main_craftsman"),
 
 		  (item_get_slot, ":outputs_added_to_market", ":enterprise_output", slot_item_output_per_run),
 		  (assign, ":outputs_added_to_warehouse", 0),

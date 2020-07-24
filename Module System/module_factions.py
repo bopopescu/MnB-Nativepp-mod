@@ -94,7 +94,7 @@ factions = [
   ("forest_bandits","Forest Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x990000),
 
   ("undeads","{!}Undeads", max_player_rating(-30), 0.5,[("commoners",-0.7),("player_faction",-0.5)], []),
-  ("slavers","{!}Slavers", 0, 0.1, [], []),
+  ("subordinaters","{!}Subordinaters", 0, 0.1, [], []),
   ("peasant_rebels","{!}Peasant Rebels", 0, 1.0,[("noble_refugees",-1.0),("player_faction",-0.4)], []),
   ("noble_refugees","{!}Noble Refugees", 0, 0.5,[], []),
 ]

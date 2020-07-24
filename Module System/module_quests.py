@@ -162,7 +162,7 @@ quests = [
 ##################
 # Note : This is defined as the first mayor quest in module_constants.py: 
  ("move_cattle_herd", "Move Cattle Herd to {s13}", qf_random_quest,
-  "{!}Guildmaster of {s10} asked you to move a cattle herd to {s13}."
+  "{!}Guildmain of {s10} asked you to move a cattle herd to {s13}."
   ),
  ("escort_merchant_caravan", "Escort Merchant Caravan to {s8}", qf_random_quest, #make this a non-random quest?
   "{!}Escort the merchant caravan to the town of {s8}."
@@ -175,22 +175,22 @@ quests = [
   ),
   
  ("kidnapped_girl", "Ransom Girl from Bandits", qf_random_quest,
-  "{!}Guildmaster of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
+  "{!}Guildmain of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
  You are to meet the bandits near {s3} and pay them the ransom fee.\
  After that you are to bring the girl back to {s4}."
   ),
   
  ("persuade_lords_to_make_peace", "Make Sure Two Lords Do Not Object to Peace", qf_random_quest, #possibly deprecate., or change effects
-  "{!}Guildmaster of {s4} promised you {reg12} denars if you can make sure that\
+  "{!}Guildmain of {s4} promised you {reg12} denars if you can make sure that\
  {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.\
  In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made."
   ),
   
  ("deal_with_looters", "Deal with Looters", qf_random_quest,
-  "{!}The Guildmaster of {s4} has asked you to deal with several bands of looters around {s4}, and bring back any goods you recover."
+  "{!}The Guildmain of {s4} has asked you to deal with several bands of looters around {s4}, and bring back any goods you recover."
   ),
  ("deal_with_night_bandits", "Deal with Night Bandits", qf_random_quest,
-  "{!}TODO: The Guildmaster of {s14} has asked you to deal with night bandits at {s14}."
+  "{!}TODO: The Guildmain of {s14} has asked you to deal with night bandits at {s14}."
   ),
 
 ############
@@ -206,8 +206,8 @@ quests = [
  ("train_peasants_against_bandits", "Train the Peasants of {s13} Against Bandits.", qf_random_quest,
   "{!}None"
   ), 
- ("deliver_food_to_city", "Deliver food to the guild master of {s4}.", qf_random_quest,
-  "{!}The elder of the village of {s3} asked you to deliver {reg5} units of {s6} to the guild master of {s4}."
+ ("deliver_food_to_city", "Deliver food to the guild main of {s4}.", qf_random_quest,
+  "{!}The elder of the village of {s3} asked you to deliver {reg5} units of {s6} to the guild main of {s4}."
   ), 
 # Deliver horses, Deliver food, Escort_Caravan, Hunt bandits, Ransom Merchant.
 ## ("capture_nobleman", "Capture Nobleman",qf_random_quest,
@@ -269,7 +269,7 @@ quests = [
   #These quests are determined dynamically by external conditions -- bandits who have carried out a raid, an impending war, etc...
  ("track_down_bandits", "Track Down Bandits", qf_random_quest,
   "{!}{s9} of {s4} asked you to track down {s6}, who attacked travellers on the roads near town."
-  ), #this is a fairly simple quest for the early game to make the town guildmaster's description of the economy a little more relevant, and also to give the player a reason to talk to other neutral parties on the map
+  ), #this is a fairly simple quest for the early game to make the town guildmain's description of the economy a little more relevant, and also to give the player a reason to talk to other neutral parties on the map
    
  ("track_down_provocateurs", "Track Down Provocateurs", qf_random_quest,
   "{!}{s9} of {s4} asked you to track down a group of thugs, hired to create a border incident between {s5} and {s6}."

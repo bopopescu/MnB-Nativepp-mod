@@ -69,10 +69,10 @@ strings = [
 
 ##  ("tutorial_camp1","This is training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around."),
 ##  ("tutorial_camp2","F is the action key. You can open doors, talk to people and pick up objects with F key. If you wish to leave a town or retreat from a battle, press the TAB key."),
-##  ("tutorial_camp3","Training Ground Master wishes to speak with you about your training. Go near him, look at him and press F when you see the word 'Talk' under his name. "),
+##  ("tutorial_camp3","Training Ground Main wishes to speak with you about your training. Go near him, look at him and press F when you see the word 'Talk' under his name. "),
 ##  ("tutorial_camp4","To see the in-game menu, press the Escape key. If you select Options, and then Controls from the in-game menu, you can see a complete list of key bindings."),
 ##  ("tutorial_camp6","You've received your first quest! You can take a look at your current quests by pressing the Q key. Do it now and check the details of your quest."),
-##  ("tutorial_camp7","You've completed your quest! Go near Training Ground Master and speak with him about your reward."),
+##  ("tutorial_camp7","You've completed your quest! Go near Training Ground Main and speak with him about your reward."),
 ##  ("tutorial_camp8","You've gained some experience and weapon points! Press C key to view your character and increase your weapon proficiencies."),
 ##  ("tutorial_camp9","Congratulations! You've finished the tutorial of Mount&Blade. Press TAB key to leave the training ground."),
 
@@ -85,7 +85,7 @@ strings = [
 #  ("tutorial_usage_club", "Club is a blunt weapon which deals less damage to the opponent than any other one handed weapon, but it knocks you opponents unconscious so that you can take them as a prisoner. Usage of clubs are affected by your one handed weapon proficiency. Focus on the club and press F key to pick it up."),
 #  ("tutorial_usage_battle_axe", "Battle axe is a long weapon and it can deal high damage to the opponent. Usage of battle axes are affected by your two handed weapon proficiency. Focus on the battle axe and press F key to pick it up."),
 #  ("tutorial_usage_spear", "Spear is a very long weapon which lets the wielder to strike the opponent earlier. Usage of the spears are affected by your polearm proficiency. Focus on the spear and press F key to pick it up."),
-#  ("tutorial_usage_short_bow", "Short bow is a common ranged weapon which is easy to reload but hard to master at. Usage of short bows are affected by your archery proficiency. Focus on the short bow and arrows and press F key to pick them up."),
+#  ("tutorial_usage_short_bow", "Short bow is a common ranged weapon which is easy to reload but hard to main at. Usage of short bows are affected by your archery proficiency. Focus on the short bow and arrows and press F key to pick them up."),
 #  ("tutorial_usage_crossbow", "Crossbow is a heavy ranged weapon which is easy to use and deals high amount of damage to the opponent. Usage of crossbows are affected by your crossbow proficiency. Focus on the crossbow and bolts and press F key to pick them up."),
 #  ("tutorial_usage_throwing_daggers", "Throwing daggers are easy to use and throwing them takes a very short time. But they deal light damage to the opponent. Usage of throwing daggers are affected byyour throwing weapon proficiency. Focus on the throwing daggers and press F key to pick it up."),
 #  ("tutorial_usage_mounted", "You can use your weapons while you're mounted. Polearms like the lance here can be used for couched damage against opponents. In order to do that, ride your horse at a good speed and aim at your enemy. But do not press the attack button."),
@@ -124,7 +124,7 @@ strings = [
  In order to achieve optimal accuracy, let fly your arrow when the reticule is at its smallest.\
  Try to shoot the target now."),
   ("tutorial_1_msg_6","{!}Well done! You've learned the basics of moving and attacking.\
- With a little bit of practice you will soon master them.\
+ With a little bit of practice you will soon main them.\
  In the second tutorial you can learn more advanced combat skills and face armed opponents.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
@@ -500,13 +500,13 @@ strings = [
   ("gardens",   "small gardens"),
   ("tanneries", "tanning vats"),
 
-  ("master_miller",  "Master miller"),
-  ("master_brewer",  "Master brewer"),
-  ("master_presser", "Master presser"),
-  ("master_smith",   "Master smith"),
-  ("master_tanner",  "Master tanner"),
-  ("master_weaver",  "Master weaver"),
-  ("master_dyer",    "Master dyer"),
+  ("main_miller",  "Main miller"),
+  ("main_brewer",  "Main brewer"),
+  ("main_presser", "Main presser"),
+  ("main_smith",   "Main smith"),
+  ("main_tanner",  "Main tanner"),
+  ("main_weaver",  "Main weaver"),
+  ("main_dyer",    "Main dyer"),
 
 
 
@@ -702,7 +702,7 @@ strings = [
   ("loot_village", "attack innocent villagers"),
   ("steal_from_villagers", "steal from poor villagers"),
   ("rob_caravan", "rob a merchant caravan"), # possibly remove
-  ("sell_slavery", "sell people into slavery"),
+  ("sell_subordinatery", "sell people into subordinatery"),
 
 # egalitarian
   ("men_hungry", "run out of food"), ##Done - simple triggers
@@ -1343,7 +1343,7 @@ strings = [
   ("npc12_personalityclash2_speech_b", "Captain, if that man knew the slightest thing about medical matters, he would know that one should never undermine a patient's confidence in his doctor, particularly not during a complicated operation. If you would be kind enough to dismiss him from this company, you would be doing all of us a great service."), # jeremenus - artimenner
   ("npc13_personalityclash2_speech_b", "When all the dust settled, {s11} turned on me and told me not to 'tempt the wrath of the Heavens' with my 'hubris.' I responded that at least I hadn't killed my own brother, which I think bothers the Heavens a lot more than battlefield small talk. {s11} turns red like a baboon's arse and would have struck me had I not artfully dodged out of his away. Tell him to lighten up, will you?"), #nizar - firentis
   ("npc14_personalityclash2_speech_b", "{Sir/Madame}, such defiance of proper authority is a corrosive influence on our company, and I shall have him flogged if he does so again."), #lazalit - bunduk
-  ("npc15_personalityclash2_speech_b", "{s11} responded that Galenian was an 'antiquated know-nothing.' Captain, no true doctor would have such disrespect for the great masters of the past. I do not believe you should employ such an obvious impostor."), #artimenner - jeremus
+  ("npc15_personalityclash2_speech_b", "{s11} responded that Galenian was an 'antiquated know-nothing.' Captain, no true doctor would have such disrespect for the great mains of the past. I do not believe you should employ such an obvious impostor."), #artimenner - jeremus
   ("npc16_personalityclash2_speech_b", "After our last scrap, I was slicing open the guts of some our foes to check for hidden gold, as a girl who counts her pennies ought. He gagged and muttered that I was an 'animal.' I'll inspect his innards for contraband if he doesn't keep a civil tongue in his head."), #klethi - borcha
   ("npc17_personalityclash2_speech_b", "She has no manners, for a woman that is unconcievable. After the last battle, she told me that she wanted to torture a wounded annemy just for her own pleasure. I tell you this woman is crazy and you should get rid of her before she starts causing trouble."),
   ("npc18_personalityclash2_speech_b", "That way she would have a reason to return home and get back to whatever habits she had before coming with you. Hopefully she had non violent ones. I'm just doing this for her own safety, and also because she is mentaly tormented, she sees violence everywhere, and loves it."),
@@ -1812,7 +1812,7 @@ strings = [
   ("npc13_fief_acceptance", "How generous and kind of you, {sire/my lady}. Allow me to express the utmost reverence for your wisdom in selecting me. Truly, your perspicacity exceeds that of King Laminur, who could read the character of a man from a single hair of his head. Your judgment surpasses that of the Emperor Akembra, to whom even the jinns submitted their disputes. Anyway, I accept."), #nizar
   ("npc14_fief_acceptance", "You do me a great honor, captain. In Geroia, a youngest son such as myself has few opportunities to earn a fief of his own. But here, in Calradia, there is still the chance for a man to win with his sword what was denied him by his birth! I shall hold {s17} as your vassal, and raise an army to fight for your glory and for mine."), #lazalit
   ("npc15_fief_acceptance", "Well, {sir/my lady}, that's a gracious act, and marks you as the kind of monarch who can save this sorry land from the incompetence of the current batch. I suspect a lot of the noble lords around here will think that a commoner like me isn't fit to hold a fief. Well, when they see what I do with it, and what revenues I can bring in, they'll change their tune!"), #artimenner
-  ("npc16_fief_acceptance", "Oh, that's most generous of you, {sire/my lady}. I've been in and out of many a great hall or manor -- not always with the master's permission, I should add -- but I never thought I'd own one myself. Let me think... When I collect my first year's rents, what baubles shall I buy myself?"), #klethi  
+  ("npc16_fief_acceptance", "Oh, that's most generous of you, {sire/my lady}. I've been in and out of many a great hall or manor -- not always with the main's permission, I should add -- but I never thought I'd own one myself. Let me think... When I collect my first year's rents, what baubles shall I buy myself?"), #klethi  
   ("npc17_fief_acceptance", "You'll make me your vassal? What an important task you give me, but I shall make good use of what you give me."),
   ("npc18_fief_acceptance", "I knew this moment would happen but not right now, you surprise me and this is a huge one."),
   ("npc19_fief_acceptance", "I didn't expected this, me? A fief for me? You give me the proof of you goodwill towards me."),
@@ -1855,16 +1855,16 @@ strings = [
   ("npc2_turn_against", "This is a sad day. I never thought that I might meet my old captain on the field of battle. Even if I triumph, it will bring me no joy."), #marnid
   ("npc3_turn_against", "Oh {playername} -- what a tragic turn our lives have taken! I can only hope that the tides of war that have made us enemies, will one day allow us to be friends."), #ymira
   ("npc4_turn_against", "Aye, well.... I'm not sure what to say. If we must fight, let's get it over with."), #rolf
-  ("npc4_turn_against", "{playername} Bahadur! I took your salt, and was well rewarded for it! However, I will remind you of an old truth -- that while a Khergit may be an ardent follower, and a devoted friend, he will never be your slave.... Anyway, today I come against you with my sword raised. But I hope that one day we raise a glass together, to a friendship renewed."), #beheshtur
+  ("npc4_turn_against", "{playername} Bahadur! I took your salt, and was well rewarded for it! However, I will remind you of an old truth -- that while a Khergit may be an ardent follower, and a devoted friend, he will never be your subordinate.... Anyway, today I come against you with my sword raised. But I hope that one day we raise a glass together, to a friendship renewed."), #beheshtur
   ("npc6_turn_against", "It grieves me more than anything I can say to meet you like this, {playername}. I shall not dwell on the circumstances that have led us to this point. I can only hope that we may one day be reconciled."), #firentis
   ("npc7_turn_against", "Well, captain. You made of me a great lady, and for that I am grateful. However, you did not buy me, and now the circumstances have caused us our interests to clash, I can meet you in battle with a clear conscience. Still, I hope some day that circumstances may change again, and we may meet as friends."), #deshavi
   ("npc8_turn_against", "So we now we meet as enemies, and may shortly face each other over the rims of our shields. A grim day this is. Sometimes, the spinners of our fate have a dark sense of humor."), #matheld
   ("npc9_turn_against", "I will not accept fault for the circumstances which have led us to become enemies. I want you to know that my conscience is clear, although my heart is heavy."), #alayen
-  ("npc10_turn_against", "Well, it looks like the tides of fate have led me to make war on my old captain. Maybe things started to go wrong when you became my liege -- I suppose I was never much suited to vassalage. Anyway, here we are now. Maybe, when the world is changed and there are no more masters and servants, or lords and vassals, then we can meet together as friends."), #bunduk
+  ("npc10_turn_against", "Well, it looks like the tides of fate have led me to make war on my old captain. Maybe things started to go wrong when you became my liege -- I suppose I was never much suited to vassalage. Anyway, here we are now. Maybe, when the world is changed and there are no more mains and servants, or lords and vassals, then we can meet together as friends."), #bunduk
   ("npc11_turn_against", "Great heaven, {laddie/lassie}. So now it looks like you and I are enemies. Didn't I say that life takes us on some very strange turns? Destiny sometimes has a cruel sense of humor -- I'll say that much."), #katrin
   ("npc12_turn_against", "So, it seems we must fight. I would have you know, {sir/my lady}, that I have not betrayed you. I had never served you as a man, but served the principles which I believed you upheld. As you no longer uphold them, I must do my best to thwart you. But I bear you no ill will, and I hope that we can meet again some day as friends"), #jeremus
   ("npc13_turn_against", "It is sad to meet you as my enemy, Captain -- but on the other hand, to meet such a titan of the battlefield as yourself in combat is a rare privilege. Truly, the news of our contest today shall keep the bards and poets of Calradia in wine and silver for months to come, do you think?"), #nizar
-  ("npc14_turn_against", "Well, {playername}. We meet as enemies. I confess that I have mixed feelings. It grieves me to make war on you, but if we meet in battle and I prevail, I will have defeated the worthiest foe in all Calradia, and I will know that my mastery of the military art is complete!"), #lazalit
+  ("npc14_turn_against", "Well, {playername}. We meet as enemies. I confess that I have mixed feelings. It grieves me to make war on you, but if we meet in battle and I prevail, I will have defeated the worthiest foe in all Calradia, and I will know that my mainy of the military art is complete!"), #lazalit
   ("npc15_turn_against", "Ah... I have not been looking forward to this day. I just want to say that in my sight, if you'd kept your faith in me, things would never have come to this. But no doubt you see it differently."), #artimenner
   ("npc16_turn_against", "Hello, Captain! So, I guess we're enemies! One small word of warning if we end up fighting each other -- once the rage of battle hits me, I can't always account for my actions. Just know that whatever I do, it's not personal. Maybe if we both walk away from this, we can meet once more as friends?"), #klethi
   ("npc17_turn_against", "{Sir/Lady}. It's you, I know that we are ennemies, but I still consider you as a friend, aren't best friends the ones struggling the most?"),
@@ -2007,7 +2007,7 @@ strings = [
 
 #("comment_defer_fief_to_woman", "Were you a man, I would gladly have granted you land, and counted you as one of my bravest vassals. But you see, this has never before happened in Calradia. We have had women serve in our armies, and sometimes, a woman who is the inheritor of her husband or father will lead her retainers into battle to uphold her family obligation. But to enfief a woman for having proved herself in battle? I, for one, have not heard of this."),
 
-#("comment_defer_fief_to_woman_2", "Do not think that I am slave to tradition, if it comes between me and the crown which is rightully mine. But a monarch also cannot appear weak..."),
+#("comment_defer_fief_to_woman_2", "Do not think that I am subordinate to tradition, if it comes between me and the crown which is rightully mine. But a monarch also cannot appear weak..."),
 
 
 
@@ -2251,7 +2251,7 @@ strings = [
   #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
   ("comment_you_enfiefed_a_commoner_hesitant",  "I understand that you have given {s51} to a commoner who calls {reg4?herself:himself} {s54}. Be careful. To learn the art of governance is no easy task, and perhaps it is best that fathers pass it on to their sons. I advise you against tampering with the institution of lordship."),
   ("comment_you_enfiefed_a_commoner_derisive",   "I understand that you have given {s51} to a commoner who calls {reg4?herself:himself} {s54}. Do not the ancients warn us against making royal robes out of the hides of pigs?"),
-  ("comment_you_enfiefed_a_commoner_nasty",      "I understand that you have given {s51} to a commoner who has taken the name of {s54}. Have a care! A dog may turn on its master."),
+  ("comment_you_enfiefed_a_commoner_nasty",      "I understand that you have given {s51} to a commoner who has taken the name of {s54}. Have a care! A dog may turn on its main."),
   ##diplomacy end+
 
   ##diplomacy start+
@@ -2407,7 +2407,7 @@ strings = [
   ("lord_follow_refusal_quarrelsome",   "Follow someone like you? I don't think so."),
   ("lord_follow_refusal_pitiless",      "Lords like me do not follow people like you, {sir/madame}."),
   ("lord_follow_refusal_cunning",       "First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you."),
-  ("lord_follow_refusal_sadistic",      "I think not! Rather, you should follow me, as a whipped cur follows {his/her} master."),
+  ("lord_follow_refusal_sadistic",      "I think not! Rather, you should follow me, as a whipped cur follows {his/her} main."),
   ("lord_follow_refusal_goodnatured",   "Um, I am a bit pressed with errands right now. Perhaps at a later date."),
   ("lord_follow_refusal_upstanding",    "First show me that you are worthy to lead, and then perhaps I will follow."),
 
@@ -2598,8 +2598,8 @@ strings = [
   ("vaegir_rebellion_pretender_story_1",   "My father died when I was young, leaving me in the care of his brother, the regent Burelek. But rather than hold the throne until I came of age, this usurper used his newfound power to accuse my mother of adultery, and to claim that I was not my father's son. She was executed for treason, and I was declared a bastard."),
   ("khergit_rebellion_pretender_story_1",  "Sanjar Khan and I are brothers, sons of the old Janakir Khan, although of different mothers. Although I was the younger brother, all those who knew the old Khan will testify that throughout my father's life, I was his favorite, entrusted with the responsibilities of government. Sanjar busied himself with hunts and feasts to win the affection of the more dissolate of my father's commanders."),
   ("nord_rebellion_pretender_story_1",     "I am called the Far-Seeker because I have travelled great distances, even by the standards of the Nords, in search of knowledge. Before I came of age, my father sent me abroad on a tour of study at the courts and universities in the lands overseas. If the Nords are to call themselves the heirs of the Calradian empire, then they must act the part, and know something of law and letters, and not call themselves content merely to fight, plunder, and drink."),
-  ("rhodok_rebellion_pretender_story_1",   "The Rhodoks are a free people, and not slaves to any hereditary monarch. The king must be chosen from one of the leading noble families of the land, by a council drawn by lot from the patricians of the cities of Jelkala, Veluca, and Yalen. The council meets on a field before Jelkala, and no man is allowed to appear in arms during their deliberations, on pain of death."),
- ("sarranid_rebellion_pretender_story_1", "I was born in a faraway land, to a humble family, and made a slave when I was but a girl -- but there is no shame in that, for the mothers of many of our kings were slaves. The old Sultan, Ayzar, spotted me in the markets and was struck by my beauty. I entered his household, and there he also learned to respect my intelligence. As he grew older, he allowed me to govern in his stead. First I managed the affairs of the palace, and later those of the realm."),
+  ("rhodok_rebellion_pretender_story_1",   "The Rhodoks are a free people, and not subordinates to any hereditary monarch. The king must be chosen from one of the leading noble families of the land, by a council drawn by lot from the patricians of the cities of Jelkala, Veluca, and Yalen. The council meets on a field before Jelkala, and no man is allowed to appear in arms during their deliberations, on pain of death."),
+ ("sarranid_rebellion_pretender_story_1", "I was born in a faraway land, to a humble family, and made a subordinate when I was but a girl -- but there is no shame in that, for the mothers of many of our kings were subordinates. The old Sultan, Ayzar, spotted me in the markets and was struck by my beauty. I entered his household, and there he also learned to respect my intelligence. As he grew older, he allowed me to govern in his stead. First I managed the affairs of the palace, and later those of the realm."),
 
   ("swadian_rebellion_pretender_story_2",  "Yet when my father died, his cousin Harlaus convinced the nobles that no Swadian king of sound mind could name a woman as his heir. Harlaus said that his designation of me was the act of a madman, and thus had no legal standing, and that he, as my father's closest male relative, should of take the throne."),
   ("vaegir_rebellion_pretender_story_2",   "I was smuggled abroad by a faithful servant, but now I am of age and have returned to reclaim what is rightfully mine. Burelek died soon after his act of perfidy -- the judgment of heaven, no doubt. His son Yaroglek now calls himself king, but as his claim is tainted, he is no less a usurper than his father, and I will topple him from his throne."),
@@ -2622,7 +2622,7 @@ strings = [
   ("rhodok_rebellion_monarch_response_1",  "No doubt Lord Kastor told you that I defiled the hallowed Rhodok custom by interfering with the patricians' election of a king. Well, let me tell you something. The patricians of the towns make longwinded speeches about our ancient liberties, but then choose as their king whichever noble last sat in their villa and sipped a fine wine and promised to overlook their unpaid taxes."),
   ("sarranid_rebellion_monarch_response_1", "Our scholars have long agreed that there is one overriding principle in politics. Men should accept the authority of the ruler, because tyranny is better than civil war. It was for that reason that I accepted the authority of both Baybak and Arwa, to whom I gave my oath as co-rulers."),
 
-  ("swadian_rebellion_monarch_response_2", "Those who weep for the plight of a Swadian princess denied her father's throne should reflect instead on the fate of a Swadian herdswoman seized by a Vaegir raider and taken as chattel to the slave markets. Talk to me of queens and old stories when our warlike neighbors are vanquished, and our land is at peace."),
+  ("swadian_rebellion_monarch_response_2", "Those who weep for the plight of a Swadian princess denied her father's throne should reflect instead on the fate of a Swadian herdswoman seized by a Vaegir raider and taken as chattel to the subordinate markets. Talk to me of queens and old stories when our warlike neighbors are vanquished, and our land is at peace."),
   ("vaegir_rebellion_monarch_response_2",  "Whatever my father may or may not have done to secure the throne does not matter. I have inherited it, and that is final. If every old claim were to be brought up anew, if every man's inheritance could be called into question at any time, then it would be the end of the institution of kingship, and we would live in a state of constant civil war."),
   ("khergit_rebellion_monarch_response_2", "Dustum would make a fine assessor of flocks, or adjudicator of land disputes. But can you imagine such a man as khan? We would be run off of our land in no time by our neighbors, and return to our old days of starving and freezing on the steppe."),
   ("nord_rebellion_monarch_response_2",    "Old Hakrim may have had fancy ideas about how to dispose of his kingdom, but it is not just royal blood that makes a King of the Nords. I am king by acclamation of the thanes, and by right of being the strongest. That counts for more than blood, and woe to any man in this land who says otherwise."),
@@ -2713,7 +2713,7 @@ alden^\
 Alhanalem^\
 amade^\
 Anthallas^\
-Alkhadias Master^\
+Alkhadias Main^\
 Arch3r^\
 Archevious^\
 Arcas Nebun^\
@@ -2785,7 +2785,7 @@ Lucke189^\
 Mabons^\
 MacPharlan^\
 Madnes5^\
-MagicMaster^\
+MagicMain^\
 Makh^\
 ManiK^\
 Manitas^\
@@ -3036,7 +3036,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("s1_won_round", "{s1} has won the round!"),
   ("round_draw", "Time is up. Round draw."),
   ("round_draw_no_one_remained", "No one left. Round draw."),
-  ("death_mode_started", "Hurry! Become master of the field!"),
+  ("death_mode_started", "Hurry! Become main of the field!"),
 
   ("reset_to_default", "Reset to Default"),
   ("done", "Done"),
@@ -4424,7 +4424,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("quick_battle_troop_8", "Growing up with one of the nomadic tribes deep in the desert beyond Sarranid lands, Gamara learned early on how to hunt with sling and spear. However, the simple life and pitiless conditions in the desert did not satisfy her, and she burned with a desire to see the great world beyond that she had heard so many wondrous tales about. Life is not easy for an adventuring young woman, and Gamara had to learn the ways of Calradia quickly. Taking the weapons and armor of a soldier who had attacked her after a dispute, Gamara now hides her beauty under thick Sarranid garb, and many never even suspect she is a woman –- certainly as a force on the battlefield she is as dangerous as any man. She has gathered about her a group of followers, and together they wander the war-torn land in search of glory."),
   ("quick_battle_troop_9", "Aethrod is not a noble person. He's changed his name twice, and is blamed for most of the crimes on Vaegir territory. True or not, he claims to never have taken an innocent man's life, and considers himself a patriotic citizen, several times bringing his band or renegades to the assistance of his faction, when it is threatened. In times of peace, however, most lords must be careful when he is in the vicinity due to his daring personality and willingness to challenge a lord. Born and rasied in the slums of Reyvadin, he learned how to use a bow at an early age and ran away from home a fourteen. Now at thirty two, his archery skills are near perfect and though he can't ride a horse well, he can hit one at the furthest of distances. Tough as nails and sharp as a hawk, he is a true local legend."),
   ("quick_battle_troop_10", "Being the daughter of one of the most infamous bandit leaders in the Sarranid realm isn't always easy, but Zaira seems to have managed quite well. Unlike most women she grew up learning the ways of the desert warrior and is deadly with the sword as well as the bow. While the other girls her age learned how to manage the household, Zaira learned how to best gut a merchant before taking his money. At the age of sixteen Zaira had killed more men than the average veteran in the Sultan's army. Just before her twentieth brithday her father was killed in brawl with another bandit leader. As the only child, Zaira now took control of her father's band. After avenging her father, she quickly picked up where he had left. Now she's on a good way of establishing her own reputation has a bandit leader."),
-  ("quick_battle_troop_11", "Argo Sendnar had quite a diversified life. When he arrived at Calradia, working as a trader, he hoped for more income than in Lokti. Little did he know, that the wartorn Calradia was a wasps' nest for bandits and cutthroats that made trading a lot more complicated than in Lokti. Being bought out by another competeting trader, after losing all his goods and money due to caravan raids, he was forced to serve as a caravan guard to make a living. Despite his pathetic fighting skills, he soon found an employment on one of the more dangerous routes through Calradia. Due to sheer luck he managed to stay alive long enough to aquire enough combat experience and money to start his own buisness as a caravan master, offering his services to traders in need of defense for their goods."),
+  ("quick_battle_troop_11", "Argo Sendnar had quite a diversified life. When he arrived at Calradia, working as a trader, he hoped for more income than in Lokti. Little did he know, that the wartorn Calradia was a wasps' nest for bandits and cutthroats that made trading a lot more complicated than in Lokti. Being bought out by another competeting trader, after losing all his goods and money due to caravan raids, he was forced to serve as a caravan guard to make a living. Despite his pathetic fighting skills, he soon found an employment on one of the more dangerous routes through Calradia. Due to sheer luck he managed to stay alive long enough to aquire enough combat experience and money to start his own buisness as a caravan main, offering his services to traders in need of defense for their goods."),
   ("quick_battle_troops_end", "{!}quick_battle_troops_end"),
 
   ("tutorial_training_ground_intro_message", "Walk around the training field and speak with the fighters to practice various aspects of Mount&Blade combat. You can use ASDW keys to move around. To talk to a character, approach him until his name appears on your screen, and then press the F key. You can also use the F key to pick up items, open doors and interact with objects. Press the Tab key to exit the tutorial any time you like."),
@@ -4612,7 +4612,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
   ("journey_to_jelkala", "You came by ship, skirting the cliffs where the Rhodok highlands meet the sea. Much of the coastline was obscured by tendrils of fog that snaked down the river valleys, but occasionally you caught sight of a castle watchtower rising above the mists -- and on one occasion, a beacon fire burning to warn of an enemy warband. You knew that you were relatively safe at sea, as you were too far south to risk encountering the sea raiders who trouble the coasts of the Nordic lands, but it was still a relief to reach the Selver estuary, gateway to the port of Jelkala, and see a Rhodok galley riding at anchor, its pennants fluttering in the evening breeze."),
 
-  ("journey_to_sargoth", "You took passage with a trading longship, carrying gyrfalcons from the furthest reaches of the north to be bartered for linen and wool. It sailed early in the season, but the master reckoned that the risks of drifting ice and later winter storms could be justified by arriving ahead of the Sea Raiders, who by April would be sailing forth from their island lairs to ravage Calradia's coasts. It was some relief when your ship came in sight of the delta of the Vyl and Boluk rivers, and a short while later, rowed past tidal flats and coastal marshes to the city of Sargoth, home to the Sea Raiders' distant kinsmen, the Nordic lords, who a few generations ago had carved themselves a kingdom in this rich but troubled land."),
+  ("journey_to_sargoth", "You took passage with a trading longship, carrying gyrfalcons from the furthest reaches of the north to be bartered for linen and wool. It sailed early in the season, but the main reckoned that the risks of drifting ice and later winter storms could be justified by arriving ahead of the Sea Raiders, who by April would be sailing forth from their island lairs to ravage Calradia's coasts. It was some relief when your ship came in sight of the delta of the Vyl and Boluk rivers, and a short while later, rowed past tidal flats and coastal marshes to the city of Sargoth, home to the Sea Raiders' distant kinsmen, the Nordic lords, who a few generations ago had carved themselves a kingdom in this rich but troubled land."),
 
   ("journey_to_tulga", "You came with a caravan, crossing the mountains that border Calradia on the north and east, bringing spices from faraway lands to trade for wool and salt. The passes were still choked with snow, and it was hard going, but at last you crested a ridge and saw before you the Calradian steppes. On some hillsides the thin grass of spring was already turning yellow, but the lower slopes of the mountains were still a vibrant green. Herds of sheep and tawny steppe ponies drifted across them like clouds, testifying to the wealth of the Khergit khans. From time to time small groups of horsemen would follow your caravan from a distance, perhaps sizing up how well you could defend the wealth you carried, so it was with some relief that you saw the towers of Tulga rising up from the plains."),
 
@@ -4675,7 +4675,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("feast_wedding_opportunity", " If your betrothed and {her/his} family are present, then this may be an opportunity for you to celebrate the wedding."),
 #diplomacy end+
   ("s21_the_s8_declared_war_as_part_of_a_bid_to_conquer_all_calradia", "{s21}. The {s8} declared war with very little pretext, as part of a bid to conquer all Calradia."),
-  ("master_vinter", "Master vinter"),
+  ("main_vinter", "Main vinter"),
   ("s54_has_left_the_realm", "{s54} has left the realm."),
   ("enterprise_s5_at_s0", "Net revenue from {s5} at {s0}"),
 

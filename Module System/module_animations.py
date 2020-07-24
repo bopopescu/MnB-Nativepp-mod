@@ -5,7 +5,7 @@ from header_animations import *
 #  There are two animation arrays (one for human and one for horse). Each animation in these arrays contains the following fields:
 #  1) Animation id (string): used for referencing animations in other files. The prefix anim_ is automatically added before each animation-id .
 #  2) Animation flags: could be anything beginning with acf_ defined in header_animations.py
-#  3) Animation master flags: could be anything beginning with amf_ defined in header_animations.py
+#  3) Animation main flags: could be anything beginning with amf_ defined in header_animations.py
 #  4) Animation sequences (list).
 #  4.1) Duration of the sequence.
 #  4.2) Name of the animation resource.

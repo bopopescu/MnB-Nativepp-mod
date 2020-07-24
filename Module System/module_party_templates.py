@@ -42,7 +42,7 @@ party_templates = [
 # Ryan BEGIN
   ("looters","Looters",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_brigand,0,1),(trp_bandit,0,5),(trp_looter,3,65),(trp_peasant_woman,0,1,pmf_is_prisoner),(trp_farmer,0,2,pmf_is_prisoner)]),
 # Ryan END
-  ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_slaver_chief,1,3),(trp_slave_crusher,1,9),(trp_slave_hunter,2,15),(trp_slave_driver,4,24),(trp_manhunter,8,36),(trp_bandit,0,4,pmf_is_prisoner)]),
+  ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_subordinater_chief,1,3),(trp_subordinate_crusher,1,9),(trp_subordinate_hunter,2,15),(trp_subordinate_driver,4,24),(trp_manhunter,8,36),(trp_bandit,0,4,pmf_is_prisoner)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
 #  ("black_khergit_raiders","Black Khergit Raiders",icon_khergit_horseman_b|carries_goods(2),0,fac_black_khergits,bandit_personality,[(trp_black_khergit_guard,1,10),(trp_black_khergit_horseman,5,5)]),
@@ -64,7 +64,7 @@ party_templates = [
 
   
   
-  ("merchant_caravan","Merchant Caravan",icon_gray_knight|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
+  ("merchant_caravan","Merchant Caravan",icon_gray_knight|carries_goods(20)|pf_auto_remove_in_town|pf_quest_party,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_main,1,1),(trp_caravan_guard,5,25)]),
   ("troublesome_bandits","Troublesome Bandits",icon_axeman|carries_goods(9)|pf_quest_party,0,fac_outlaws,bandit_personality,[(trp_bandit,14,55)]),
   ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_bandit,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
   ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
@@ -88,7 +88,7 @@ party_templates = [
   ("messenger_party","Messenger",icon_gray_knight|pf_show_faction,0,fac_commoners,merchant_personality,[]),
   ("raider_party","Raiders",icon_gray_knight|carries_goods(16)|pf_quest_party,0,fac_commoners,bandit_personality,[]),
   ("raider_captives","Raider Captives",0,0,fac_commoners,0,[(trp_peasant_woman,6,30,pmf_is_prisoner)]),
-  ("kingdom_caravan_party","Caravan",icon_mule|carries_goods(25)|pf_show_faction,0,fac_commoners,merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,9,18),(trp_watchman,4,8),(trp_mercenary_fieldman,2,4)]),
+  ("kingdom_caravan_party","Caravan",icon_mule|carries_goods(25)|pf_show_faction,0,fac_commoners,merchant_personality,[(trp_caravan_main,1,1),(trp_caravan_guard,9,18),(trp_watchman,4,8),(trp_mercenary_fieldman,2,4)]),
   ("prisoner_train_party","Convoy",icon_gray_knight|carries_goods(2)|pf_show_faction,0,fac_commoners,merchant_personality,[]),
   ("default_prisoners","Default Prisoners",0,0,fac_commoners,0,[(trp_bandit,5,10,pmf_is_prisoner)]),
 
@@ -263,7 +263,7 @@ party_templates = [
    ##diplomacy begin
   ("dplmc_spouse","Your spouse",icon_woman|pf_civilian|pf_show_faction,0,fac_neutral,merchant_personality,[]),
 
-  ("dplmc_gift_caravan","Your Caravan",icon_mule|carries_goods(25)|pf_show_faction,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_master,1,1),(trp_caravan_guard,5,25)]),
+  ("dplmc_gift_caravan","Your Caravan",icon_mule|carries_goods(25)|pf_show_faction,0,fac_commoners,escorted_merchant_personality,[(trp_caravan_main,1,1),(trp_caravan_guard,5,25)]),
 #recruiter kit begin
    ("dplmc_recruiter","Recruiter",icon_gray_knight|pf_show_faction,0,fac_neutral,merchant_personality,[(trp_dplmc_recruiter,1,1)]),
 #recruiter kit end

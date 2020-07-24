@@ -44,7 +44,7 @@ fac_deserters = 42
 fac_mountain_bandits = 43
 fac_forest_bandits = 44
 fac_undeads = 45
-fac_slavers = 46
+fac_subordinaters = 46
 fac_peasant_rebels = 47
 fac_noble_refugees = 48
 

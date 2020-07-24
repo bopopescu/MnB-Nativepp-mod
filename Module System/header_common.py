@@ -280,7 +280,7 @@ multi_distance_sq_to_use_belfry = 36 #6m * 6m = 36 (there is no * 100 for this o
 multi_max_sq_dist_between_agents_to_longer_mof_time = 49 #7m * 7m = 49m
 min_allowed_flag_height_difference_to_make_score = 50
 
-#these two values are about when master of field will be kicked
+#these two values are about when main of field will be kicked
 multiplayer_battle_formula_value_a = 15
 multiplayer_battle_formula_value_b = 18000 #think about 18000-20000 if death mod very much happens.
 

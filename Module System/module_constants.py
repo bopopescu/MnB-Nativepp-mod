@@ -1825,7 +1825,7 @@ spawn_points_begin = "p_zendar"
 spawn_points_end = "p_spawn_points_end"
 
 regular_troops_begin       = "trp_novice_fighter"
-regular_troops_end         = "trp_tournament_master"
+regular_troops_end         = "trp_tournament_main"
 
 swadian_merc_parties_begin = "p_town_1_mercs"
 swadian_merc_parties_end   = "p_town_8_mercs"
@@ -1833,8 +1833,8 @@ swadian_merc_parties_end   = "p_town_8_mercs"
 vaegir_merc_parties_begin  = "p_town_8_mercs"
 vaegir_merc_parties_end    = "p_zendar"
 
-arena_masters_begin    = "trp_town_1_arena_master"
-arena_masters_end      = "trp_town_1_armorer"
+arena_mains_begin    = "trp_town_1_arena_main"
+arena_mains_end      = "trp_town_1_armorer"
 
 training_gound_trainers_begin    = "trp_trainer_1"
 training_gound_trainers_end      = "trp_ransom_broker_1"
@@ -1846,7 +1846,7 @@ village_walkers_begin = "trp_village_walker_1"
 village_walkers_end   = "trp_spy_walker_1"
 
 spy_walkers_begin = "trp_spy_walker_1"
-spy_walkers_end = "trp_tournament_master"
+spy_walkers_end = "trp_tournament_main"
 
 walkers_begin = town_walkers_begin
 walkers_end   = spy_walkers_end
@@ -2169,7 +2169,7 @@ ACHIEVEMENT_LADY_OF_THE_LAKE = 80,
 dplmc_slot_party_recruiter_needed_recruits = 233           # Amount of recruits the employer ordered.
 dplmc_slot_party_recruiter_origin = 234                    # Walled center from where the recruiter was hired.
 dplmc_slot_village_reserved_by_recruiter = 235            # This prevents recruiters from going to villages targeted by other recruiters.
-dplmc_slot_party_recruiter_needed_recruits_faction = 236   # Alkhadias Master, you forgot this one from the PM you sent me :D
+dplmc_slot_party_recruiter_needed_recruits_faction = 236   # Alkhadias Main, you forgot this one from the PM you sent me :D
 dplmc_spt_recruiter     = 14
 # recruiter kit end
 ##diplomacy start+ Re-use those slots for other party types

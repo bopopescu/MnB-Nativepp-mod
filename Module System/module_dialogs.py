@@ -1024,7 +1024,7 @@ You can get some bruises of course, but better that than being cut down in the r
 "{!}.", "tutorial_troop_default",
 []],
 
-[trp_tutorial_master_archer, "start",
+[trp_tutorial_main_archer, "start",
 [
 (eq, "$g_tutorial_training_ground_archer_trainer_completed_chapters", 1),
 ],
@@ -1032,7 +1032,7 @@ You can get some bruises of course, but better that than being cut down in the r
 Take the crossbow and the bolts over there and shoot those three targets. The crossbow is much easier to shoot with compared with the bow,\
 but you need to reload it after each shot.", "archer_challenge_2", []],
 
-[trp_tutorial_master_archer, "start",
+[trp_tutorial_main_archer, "start",
 [
 (eq, "$g_tutorial_training_ground_archer_trainer_completed_chapters", 2),
 ],
@@ -1040,18 +1040,18 @@ but you need to reload it after each shot.", "archer_challenge_2", []],
 Pick up the javelins you see over there and try to hit those three targets. ",
 "archer_challenge_2", []],
 
-[trp_tutorial_master_archer, "start",
+[trp_tutorial_main_archer, "start",
 [
 (eq, "$g_tutorial_training_ground_archer_trainer_completed_chapters", 3),
 ],
 "Well, with that you have recevied the basic skills to use all three types of ranged weapons. The rest will come with practice. Train each and every day, and in time you will be as good as the best marksmen in Calradia.",
 "ranged_end", []],
 
-[trp_tutorial_master_archer, "ranged_end", [],
+[trp_tutorial_main_archer, "ranged_end", [],
 "Now, you can go talk with the melee fighters or the horsemanship trainer if you haven't already done so. They can teach you important skills too.",
 "close_window", []],
 
-[trp_tutorial_master_archer, "start",
+[trp_tutorial_main_archer, "start",
 [
 (try_begin),
  (eq, "$g_tutorial_training_ground_intro_message_being_displayed", 1),
@@ -1080,22 +1080,22 @@ If you need a tutor, let me know and I'll teach you how to use the bow, the cros
 [],
 "No, not now.", "close_window", []],
 
-[trp_tutorial_master_archer, "archer_challenge",
+[trp_tutorial_main_archer, "archer_challenge",
 [
 (eq, "$g_tutorial_training_ground_archer_trainer_completed_chapters", 0),
 ],
-"All right. Your first training will be in bowmanship. The bow is a difficult weapon to master. But once you are sufficiently good at it, you can shoot quickly and with great power.\
+"All right. Your first training will be in bowmanship. The bow is a difficult weapon to main. But once you are sufficiently good at it, you can shoot quickly and with great power.\
 Go pick up the bow and arrows you see over there now and shoot those targets.", "archer_challenge_2",
 []],
 
-# [trp_tutorial_master_archer, "archer_challenge",
+# [trp_tutorial_main_archer, "archer_challenge",
 # [
 # (eq, "$g_tutorial_training_ground_archer_trainer_completed_chapters", 1),
 # ],
 # "{!}TODO: Make 3 shots with crossbow.", "archer_challenge_2",
 # []],
 
-# [trp_tutorial_master_archer, "archer_challenge",
+# [trp_tutorial_main_archer, "archer_challenge",
 # [],
 # "{!}TODO: Make 3 shots with javelin.", "archer_challenge_2",
 # []],
@@ -1125,21 +1125,21 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
 []],
 
 
-[trp_tutorial_master_horseman, "start",
+[trp_tutorial_main_horseman, "start",
 [
 (eq, "$g_tutorial_training_ground_horseman_trainer_completed_chapters", 1),
 ],
 "I hope you enjoyed the ride. Now we move on to something a bit more difficult. Grab the lance you see over there and ride around the course hitting each target at least once.",
 "horseman_melee_challenge_2", []],
 
-[trp_tutorial_master_horseman, "start",
+[trp_tutorial_main_horseman, "start",
 [
 (eq, "$g_tutorial_training_ground_horseman_trainer_completed_chapters", 2),
 ],
 "Good! You have been able to hit all targets on horseback. That's no easy feat for a starter. Your next challange will be using a bow and arrows to shoot at the archery targets by the road. You need to put an arrow to each target to consider yourself successful.",
 "horseman_melee_challenge_2", []],
 
-  [trp_tutorial_master_horseman, "start",
+  [trp_tutorial_main_horseman, "start",
    [
      (eq, "$g_tutorial_training_ground_horseman_trainer_completed_chapters", 3),
      ],
@@ -1147,7 +1147,7 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
    [
      ]],
 
-	 [trp_tutorial_master_horseman, "horsemanship_end",
+	 [trp_tutorial_main_horseman, "horsemanship_end",
    [
      ],
    "Now, you can go talk with the melee fighters or the archery trainer if you haven't already done so. You need to learn everything you can to be prepared when you have to defend yourself.", "close_window",
@@ -1155,7 +1155,7 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
 
 
 
-  [trp_tutorial_master_horseman, "start",
+  [trp_tutorial_main_horseman, "start",
    [
      (try_begin),
        (eq, "$g_tutorial_training_ground_intro_message_being_displayed", 1),
@@ -1175,7 +1175,7 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
    [],
    "Uhm. Maybe later.", "close_window", []],
 
-  # [trp_tutorial_master_horseman, "horseman_challenge",
+  # [trp_tutorial_main_horseman, "horseman_challenge",
    # [
      # (eq, "$g_tutorial_training_ground_player_continue_without_basics", 0),
      # (this_or_next|eq, "$g_tutorial_training_ground_melee_trainer_attack_completed", 0),
@@ -1196,12 +1196,12 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
    # "{!}TODO: No", "horseman_ask_2",
    # []],
 
-  # [trp_tutorial_master_horseman, "horseman_ask_2",
+  # [trp_tutorial_main_horseman, "horseman_ask_2",
    # [],
    # "{!}TODO: Come back later then.", "close_window",
    # []],
 
-  [trp_tutorial_master_horseman, "horseman_challenge",
+  [trp_tutorial_main_horseman, "horseman_challenge",
    [
      (eq, "$g_tutorial_training_ground_horseman_trainer_completed_chapters", 0),
     ],
@@ -1568,48 +1568,48 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
 
 
 
-  [trp_ramun_the_slave_trader, "start", [
+  [trp_ramun_the_subordinate_trader, "start", [
    (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
    ], "Good day to you, {young man/lassie}.", "ramun_introduce_1",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_1", [], "Forgive me, you look like a trader, but I see none of your merchandise.", "ramun_introduce_2",[
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_1", [], "Forgive me, you look like a trader, but I see none of your merchandise.", "ramun_introduce_2",[
    (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),
   ]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_1", [], "Never mind.", "close_window",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_2", [], "A trader? Oh, aye, I certainly am that.\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_1", [], "Never mind.", "close_window",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_2", [], "A trader? Oh, aye, I certainly am that.\
  My merchandise is a bit different from most, however. It has to be fed and watered twice a day and tries to run away if I turn my back.", "ramun_introduce_3",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_3", [], "Livestock?", "ramun_introduce_4",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_4", [], "Close enough. I like to call myself the man who keeps every boat on this ocean moving.\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_3", [], "Livestock?", "ramun_introduce_4",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_4", [], "Close enough. I like to call myself the man who keeps every boat on this ocean moving.\
  Boats are driven by oars, you see, and oars need men to pull them or they stop. That's where I come in.", "ramun_introduce_5",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_5", [], "Galley slaves.", "ramun_introduce_6",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_6", [], "Now you're catching on! A trading port like this couldn't survive without them.\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_5", [], "Galley subordinates.", "ramun_introduce_6",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_6", [], "Now you're catching on! A trading port like this couldn't survive without them.\
  The ships lose a few hands on every voyage, so there's always a high demand. The captains come to me and they pay well.", "ramun_introduce_7",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_7", [], "Where do the slaves come from?", "ramun_introduce_8",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_8", [], "Mostly I deal in convicted criminals bought from the authorities.\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_7", [], "Where do the subordinates come from?", "ramun_introduce_8",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_8", [], "Mostly I deal in convicted criminals bought from the authorities.\
  Others are prisoners of war from various nations, brought to me because I offer the best prices.\
  However, on occasion I'll buy from privateers and other . . . 'individuals'. You can't be picky about your suppliers in this line of work.\
  You wouldn't happen to have any prisoners with you, would you?", "ramun_introduce_9",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_9", [], "Me? ", "ramun_introduce_10",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_10", [], "Why not? If you intend to set foot outside this town,\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_9", [], "Me? ", "ramun_introduce_10",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_10", [], "Why not? If you intend to set foot outside this town,\
  you're going to cross swords with someone sooner or later. And, God willing, you'll come out on top.\
  Why not make some extra money off the whole thing? Take them alive, bring them back to me, and I'll pay you fifty denars for each head.\
  Don't much care who they are or where they come from.", "ramun_introduce_11",[]],
-  [trp_ramun_the_slave_trader|plyr, "ramun_introduce_11", [], "Hmm. I'll think about it.", "ramun_introduce_12",[]],
-  [trp_ramun_the_slave_trader, "ramun_introduce_12", [], "Do think about it!\
+  [trp_ramun_the_subordinate_trader|plyr, "ramun_introduce_11", [], "Hmm. I'll think about it.", "ramun_introduce_12",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_introduce_12", [], "Do think about it!\
  There's a lot of silver to be made, no mistake. More than enough for the both of us.", "close_window",[]],
 
-  [trp_ramun_the_slave_trader,"start", [], "Hello, {playername}.", "ramun_talk",[]],
-  [trp_ramun_the_slave_trader,"ramun_pre_talk", [], "Anything else?", "ramun_talk",[]],
+  [trp_ramun_the_subordinate_trader,"start", [], "Hello, {playername}.", "ramun_talk",[]],
+  [trp_ramun_the_subordinate_trader,"ramun_pre_talk", [], "Anything else?", "ramun_talk",[]],
 
-  [trp_ramun_the_slave_trader|plyr,"ramun_talk",
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_talk",
    [[store_num_regular_prisoners,reg(0)],[ge,reg(0),1]],
    "I've brought you some prisoners, Ramun. Would you like a look?", "ramun_sell_prisoners",[]],
 ##diplomacy start+
 #Sell all prisoneers, a la rubik's Custom Commander, except when you are asked
 #to confirm he tells you the number/price.
-  [trp_ramun_the_slave_trader|plyr,"ramun_talk",
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_talk",
    [(store_num_regular_prisoners,reg0),(ge,reg0,1)],
    "I want to sell all the prisoners I have with me.", "ramun_sell_prisoners_all",[]],
-  [trp_ramun_the_slave_trader,"ramun_sell_prisoners_all", [
+  [trp_ramun_the_subordinate_trader,"ramun_sell_prisoners_all", [
   (store_num_regular_prisoners,reg0),
   (store_div, ":sell_price", "$daily_random", 70),
   (val_add, ":sell_price", 60),
@@ -1617,66 +1617,66 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
   (store_sub, reg2, reg0, 1),
   ],
   "I'll take your {reg0} {reg2?prisoners:prisoner} off your hands for {reg1} denars.  We have a deal?", "ramun_sell_prisoners_all_2", []],
-  [trp_ramun_the_slave_trader|plyr,"ramun_sell_prisoners_all_2", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_sell_prisoners_all_2", [],
    "We have a deal.", "ramun_sell_prisoners_2", [
     (store_div, ":sell_price", "$daily_random", 70),
     (val_add, ":sell_price", 60),
 	(call_script, "script_dplmc_sell_all_prisoners", 1, ":sell_price"),]
   ],
-  [trp_ramun_the_slave_trader|plyr,"ramun_sell_prisoners_all_2", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_sell_prisoners_all_2", [],
    "Let me think about it again.", "ramun_pre_talk",[]],
 ##diplomacy end+
-  [trp_ramun_the_slave_trader,"ramun_sell_prisoners", [	(store_div, reg12, "$daily_random", 70),
+  [trp_ramun_the_subordinate_trader,"ramun_sell_prisoners", [	(store_div, reg12, "$daily_random", 70),
 																					(val_add, reg12, 60),],
   "Today's price for the merchandise is {reg12} denars. Let me see what you have...", "ramun_sell_prisoners_2",
    [[change_screen_trade_prisoners]]],
-  [trp_ramun_the_slave_trader, "ramun_sell_prisoners_2", [], "A pleasure doing business with you.", "close_window",[]],
+  [trp_ramun_the_subordinate_trader, "ramun_sell_prisoners_2", [], "A pleasure doing business with you.", "close_window",[]],
 
-  [trp_ramun_the_slave_trader|plyr,"ramun_talk", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)], "How do I take somebody as prisoner?", "ramun_ask_about_capturing",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_talk", [(troop_slot_ge,"$g_talk_troop", slot_troop_met_previously, 1)], "Can you tell me again about capturing prisoners?", "ramun_ask_about_capturing",[(troop_set_slot,"$g_talk_troop", slot_troop_met_previously, 2)]],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_talk", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)], "How do I take somebody as prisoner?", "ramun_ask_about_capturing",[]],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_talk", [(troop_slot_ge,"$g_talk_troop", slot_troop_met_previously, 1)], "Can you tell me again about capturing prisoners?", "ramun_ask_about_capturing",[(troop_set_slot,"$g_talk_troop", slot_troop_met_previously, 2)]],
 
-  [trp_ramun_the_slave_trader,"ramun_ask_about_capturing", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)],
+  [trp_ramun_the_subordinate_trader,"ramun_ask_about_capturing", [(neg|troop_slot_ge,"$g_talk_troop",slot_troop_met_previously,1)],
  "You're new to this, aren't you? Let me explain it in simple terms.\
  The basic rule of taking someone prisoner is knocking him down with a blunt weapon, like a mace or a club,\
  rather than cutting him open with a sword. That way he goes to sleep for a little while rather than bleeding to death, you see?\
  I'm assuming you have a blunt weapon with you . . .", "ramun_have_blunt_weapon",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_have_blunt_weapon", [],
  "Of course.", "ramun_have_blunt_weapon_yes",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_have_blunt_weapon", [],
  "As a matter of fact, I don't.", "ramun_have_blunt_weapon_no",[]],
-  [trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_yes", [],
+  [trp_ramun_the_subordinate_trader,"ramun_have_blunt_weapon_yes", [],
  "Good. Then all you need to do is beat the bugger down with your weapon, and when the fighting's over you clap him in irons.\
  It's a bit different for nobles and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
  but your average rabble-rouser will bleed like a stuck pig if you get him with something sharp. I don't have many requirements in my merchandise,\
  but I do insist they be breathing when I buy them.", "ramun_ask_about_capturing_2",[]],
-  [trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_no", [],
+  [trp_ramun_the_subordinate_trader,"ramun_have_blunt_weapon_no", [],
  "No? Heh, well, this must be your lucky day. I've got an old club lying around that I was going to throw away.\
  It a bit battered, but still good enough bash someone until he stops moving.\
  Here, have it.","ramun_have_blunt_weapon_no_2",[(troop_add_item, "trp_player","itm_club",imod_cracked)]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon_no_2", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_have_blunt_weapon_no_2", [],
  "Thanks, Ramun. Perhaps I may try my hand at it.", "ramun_have_blunt_weapon_yes",[]],
-  [trp_ramun_the_slave_trader,"ramun_ask_about_capturing", [],
+  [trp_ramun_the_subordinate_trader,"ramun_ask_about_capturing", [],
  "Alright, I'll try and expain it again in simple terms. The basic rule of taking someone prisoner is knocking him down with a blunt weapon, like a mace or a club,\
  rather than cutting him open with a sword. That way he goes to sleep for a little while rather than bleeding to death, you see?\
  It's a bit different for nobles and such, they tend to be protected enough that it won't matter what kind of weapon you use,\
  but your average rabble-rouser will bleed like a stuck pig if you get him with something sharp.", "ramun_ask_about_capturing_2",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_2", [], "Alright, I think I understand. Anything else?", "ramun_ask_about_capturing_3",[]],
-  [trp_ramun_the_slave_trader,"ramun_ask_about_capturing_3", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_ask_about_capturing_2", [], "Alright, I think I understand. Anything else?", "ramun_ask_about_capturing_3",[]],
+  [trp_ramun_the_subordinate_trader,"ramun_ask_about_capturing_3", [],
  "Well, it's not as simple as all that. Blunt weapons don't do as much damage as sharp ones, so they won't bring your enemies down as quickly.\
  And trust me, given the chance, most of the scum you run across would just as soon kill you as look at you, so don't expect any courtesy when you pull out a club instead of a sword.\
  Moreover, having to drag prisoners to and fro will slow down your party, which is why some people simply set their prisoners free after the fighting's done.\
  It's madness. How could anyone turn down all that silver, eh?", "ramun_ask_about_capturing_4",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_4", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_ask_about_capturing_4", [],
  "Is that everything?", "ramun_ask_about_capturing_5",[]],
-  [trp_ramun_the_slave_trader,"ramun_ask_about_capturing_5", [],
+  [trp_ramun_the_subordinate_trader,"ramun_ask_about_capturing_5", [],
  "Just one final thing. Managing prisoners safely is not an easy thing to do, you could call it a skill in itself.\
  If you want to capture a lot of prisoners, you should try and learn the tricks of it yourself,\
  or you won't be able to hang on to a single man you catch.", "ramun_ask_about_capturing_7",[]],
-  [trp_ramun_the_slave_trader|plyr,"ramun_ask_about_capturing_7", [],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_ask_about_capturing_7", [],
  "Thanks, I'll keep it in mind.", "ramun_pre_talk",[]],
 
-  [trp_ramun_the_slave_trader|plyr,"ramun_talk", [], "I'd better be going.", "ramun_leave",[]],
-  [trp_ramun_the_slave_trader,"ramun_leave", [], "Remember, any prisoners you've got, bring them to me. I'll pay you good silver for every one.", "close_window",[]],
+  [trp_ramun_the_subordinate_trader|plyr,"ramun_talk", [], "I'd better be going.", "ramun_leave",[]],
+  [trp_ramun_the_subordinate_trader,"ramun_leave", [], "Remember, any prisoners you've got, bring them to me. I'll pay you good silver for every one.", "close_window",[]],
 
 
 
@@ -1719,7 +1719,7 @@ Go pick up the bow and arrows you see over there now and shoot those targets.", 
 ##
 ##  [trp_tutorial_trainer,"start", [(eq, "$tutorial_quest_taken", 1),
 ##                                  (eq, "$tutorial_quest_succeeded", 1),], "Well done {playername}. Now you earned this knife. There you go.", "tutorial2_1",[]],
-##  [trp_tutorial_trainer|plyr, "tutorial2_1", [], "Thank you master.", "close_window", [(call_script, "script_end_quest", "qst_destroy_dummies"),(assign, "$tutorial_quest_award_taken", 1),(add_xp_to_troop, 100, "trp_player"),(troop_add_item, "trp_player","itm_knife",imod_chipped),]],
+##  [trp_tutorial_trainer|plyr, "tutorial2_1", [], "Thank you main.", "close_window", [(call_script, "script_end_quest", "qst_destroy_dummies"),(assign, "$tutorial_quest_award_taken", 1),(add_xp_to_troop, 100, "trp_player"),(troop_add_item, "trp_player","itm_knife",imod_chipped),]],
 ##
 ##  [trp_tutorial_trainer,"start", [(eq, "$tutorial_quest_taken", 1),
 ##                                  (eq, "$tutorial_quest_succeeded", 1),], "Greetings {playername}. Feel free to train with the targets.", "tutorial2_1",[]],
@@ -16681,7 +16681,7 @@ I have little use for {men/women} who cannot follow orders.", "lord_pretalk",
 #"he" to "{reg0?she:he}
    "I asked you for two prisoners, {playername}, not one. Two. Still, I suppose you did capture the spy's handler,\
  the more important one of the pair. The spy will not dare return here and will prove quite useless to\
-whatever master {reg0?she:he} served. 'Tis better than nothing.\
+whatever main {reg0?she:he} served. 'Tis better than nothing.\
  However, you'll understand if I pay you half the promised reward for what is but half a success.", "lord_follow_spy_half_completed",
 ##diplomacy end+
    [(party_remove_prisoners, "p_main_party", "trp_spy_partner", 1),
@@ -16825,7 +16825,7 @@ Failing to capture both the spy AND {reg0?her:his} handler plumbs astonishing ne
                          (check_quest_succeeded, "qst_deliver_cattle_to_army"),
                          (quest_get_slot, reg13, "qst_deliver_cattle_to_army", slot_quest_target_amount),
                          ],
-   "Ah, {playername}. My quartermaster has informed me of your delivery, {reg13} heads of cattle, as I requested. I'm impressed.", "lord_deliver_cattle_to_army_thank",
+   "Ah, {playername}. My quartermain has informed me of your delivery, {reg13} heads of cattle, as I requested. I'm impressed.", "lord_deliver_cattle_to_army_thank",
    [
      (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
      (quest_get_slot, ":quest_target_amount", "qst_deliver_cattle_to_army", slot_quest_target_amount),
@@ -21991,7 +21991,7 @@ Please give {reg0?her:him} these {reg10} denars and thank {reg0?her:him} on my b
      (eq, ":has_center", 1),
 	 (lt, "$player_right_to_rule", 10),
 
-    ], "{playername}, you are a {lord/lady} without a master, holding lands in your name, with only the barest scrap of a claim to legitimacy.\
+    ], "{playername}, you are a {lord/lady} without a main, holding lands in your name, with only the barest scrap of a claim to legitimacy.\
  No king in Calradia would accept a lasting peace with you.", "lord_pretalk",[]],
 
   [anyone,"lord_ask_pardon",
@@ -26699,7 +26699,7 @@ Hand over my {reg19} denars, if you please, and end our business together.", "lo
 ## So, it saddens me but I must decline your request.", "lord_claim_center_deny", []],
 ##
 ##  [anyone|plyr,"lord_claim_center_deny", [],
-##   "This is not fair my lord. I shed my blood to take {s4}. Now another {man/master} will rule over it.", "lord_claim_center_deny_2", []],
+##   "This is not fair my lord. I shed my blood to take {s4}. Now another {man/main} will rule over it.", "lord_claim_center_deny_2", []],
 ##  [anyone|plyr,"lord_claim_center_deny", [],
 ##   "I understand sir. Do as you will.", "lord_claim_center_leave_to_lord", []],
 ##  [anyone,"lord_claim_center_deny_2", [],
@@ -26708,14 +26708,14 @@ Hand over my {reg19} denars, if you please, and end our business together.", "lo
 ##   "Yes sir.", "lord_claim_center_leave_to_lord", []],
 ##
 ##  [anyone,"lord_claim_center_leave_to_lord", [],
-##   "Very well.  Then I will find a suitable master for {s4}.\
+##   "Very well.  Then I will find a suitable main for {s4}.\
 ## In recognition of your bravery and service, I give you these 5000 denars.", "lord_pretalk",
 ##   [(troop_get_slot, ":wealth", "$g_talk_troop", slot_troop_wealth),
 ##    (val_sub, ":wealth", 6000),
 ##    (troop_set_slot, "$g_talk_troop", slot_troop_wealth, ":wealth"),
 ##    (call_script, "script_troop_add_gold", "trp_player", 5000),
 ##
-##    (assign, ":new_master", "$g_talk_troop"),
+##    (assign, ":new_main", "$g_talk_troop"),
 ##    (assign, ":max_wealth", 0),
 ##
 ##    (try_for_range, ":hero_no", kingdom_heroes_begin, kingdom_heroes_end),
@@ -26729,11 +26729,11 @@ Hand over my {reg19} denars, if you please, and end our business together.", "lo
 ##      (lt, ":no_of_owned_centers", 2),
 ##      (troop_get_slot, ":wealth", "$g_talk_troop", slot_troop_wealth),
 ##      (ge, ":wealth", ":max_wealth"),
-##      (assign, ":new_master", ":hero_no"),
+##      (assign, ":new_main", ":hero_no"),
 ##      (assign, ":max_wealth", ":wealth"),
 ##    (try_end),
 ##
-##    (call_script, "script_give_center_to_lord", "$center_to_be_claimed", ":new_master"),
+##    (call_script, "script_give_center_to_lord", "$center_to_be_claimed", ":new_main"),
 ##    (set_spawn_radius, 1),
 ##    (spawn_around_party, "$center_to_be_claimed", "pt_old_garrison"),
 ##    (assign, ":new_party", reg0),
@@ -28199,14 +28199,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_follow_spy")],
  "I have good information that a man in this very town is actually an enemy spy.\
  He should be seized and hanged for his impudence,\
- but we also believe that very soon he will leave town to meet with his master,\
+ but we also believe that very soon he will leave town to meet with his main,\
  the man to whom the spy feeds all his little whispers.\
- The spy himself is of little import, but the master is a dangerous man, and could tell us a great deal\
+ The spy himself is of little import, but the main is a dangerous man, and could tell us a great deal\
  if we could only get our hands on him...", "lord_tell_mission_follow_spy",[]],
   [anyone,"lord_tell_mission_follow_spy", [],
  "I want you to wait here until the spy leaves town. Then you must follow him, stealthily, to the meeting place.\
  You must take absolute care not to be seen by the spy on your way, else he may suspect foul play and turn back.\
- When the master appears, you must ambush and arrest them and bring the pair back to me.\
+ When the main appears, you must ambush and arrest them and bring the pair back to me.\
  Alive, if you please.", "lord_tell_mission_follow_spy_2",
    [
     ]],
@@ -31875,7 +31875,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  We, the housekeepers of this castle, are at your service.", "siege_won_seneschal_1",[]],
   [anyone|plyr,"siege_won_seneschal_1", [], "Are you the seneschal?", "siege_won_seneschal_2",[]],
   [anyone,"siege_won_seneschal_2", [], "Indeed I am, my {lord/lady}.\
- I have always served the masters of {s1} to the best of my ability, whichever side they might be on.\
+ I have always served the mains of {s1} to the best of my ability, whichever side they might be on.\
  Thus you may count on my utmost loyalty for as long as you are the {lord/lady} of this place.\
  Now, do you intend to keep me on as the seneschal? I promise you will not be disappointed.", "siege_won_seneschal_3",[]],
   [anyone|plyr,"siege_won_seneschal_3", [], "Very well, you may keep your post for the time being.", "siege_won_seneschal_4",[]],
@@ -33804,7 +33804,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"deserter_barter_2", [],
    "I don't have that much money with me", "deserter_barter_3b",[]],
   [anyone,"deserter_barter_3b", [],
-   "Too bad. Then we'll have to sell you to the slavers.", "close_window",[]],
+   "Too bad. Then we'll have to sell you to the subordinaters.", "close_window",[]],
 
 
   [anyone,"deserter_barter_3a", [], "Heh. That wasn't difficult, now, was it? All right. Go now.", "close_window",[
@@ -34126,7 +34126,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone, "tavernkeeper_job_result", [
   (store_sub, ":last_troop", mayors_end, 1),
   (ge, "$g_troop_list_no", ":last_troop"),
-  ], "There may be other work, of course -- lords and guildmasters often have other tasks which we don't hear about. Also, the villages around here frequently need help, although they'd be more likely to pay you with a wedge of cheese and goodwill than with cold hard denars.", "tavernkeeper_job_result_2",
+  ], "There may be other work, of course -- lords and guildmains often have other tasks which we don't hear about. Also, the villages around here frequently need help, although they'd be more likely to pay you with a wedge of cheese and goodwill than with cold hard denars.", "tavernkeeper_job_result_2",
    [
        ]],
 
@@ -34295,7 +34295,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"ransom_broker_intro",[], "Why is that?", "ransom_broker_intro_2",[]],
   [anyone, "ransom_broker_intro_2", [], "I broker ransoms for the poor wretches who are captured in these endless wars.\
- Normally I travel between the salt mines and the slave markets on the coast, on commission from those whose relatives have gone missing.\
+ Normally I travel between the salt mines and the subordinate markets on the coast, on commission from those whose relatives have gone missing.\
  But if I'm out on my errands of mercy, and I come across a fellow dragging around a captive or two,\
  well, there's no harm in a little speculative investment, is there?\
  And you look like the type who might have a prisoner to sell.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",0),
@@ -34307,7 +34307,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone, "ransom_broker_families", [], "Oh, then I spin them a few heartwarming tales of life on the galleys.\
  You'd be surprised what sorts of treasures a peasant can dig out of his cowshed or wheedle out of his cousins,\
  assuming he's got the proper motivation!\
- And if in the end they cannot come up with the silver, then there are always slave merchants who are looking for galley slaves.\
+ And if in the end they cannot come up with the silver, then there are always subordinate merchants who are looking for galley subordinates.\
  One cannot do Heaven's work with an empty purse, you see.", "ransom_broker_info_talk",[(assign, "$ransom_broker_families_told",1)]],
   [anyone|plyr,"ransom_broker_info_talk",[(eq, "$ransom_broker_prices_told",0)], "What can I get for a prisoner?", "ransom_broker_prices",[]],
   [anyone, "ransom_broker_prices", [], "It varies. I fancy that I have a fine eye for assessing a ransom.\
@@ -35983,7 +35983,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                      (assign, "$temp", ":mercenary_amount"),
                      ],
    "Do you have a need for mercenaries, {sir/madam}?\
- {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master.\
+ {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a main.\
  We'll join you for {reg5} denars.", "mercenary_tavern_talk", []],
 
   [anyone, "start", [
@@ -36175,12 +36175,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
  To finish a stage and advance to the next one, you have to win three fights in a row.", "trainer_practice_1",
    [
      (assign, "$num_opponents_to_beat_in_a_row", 3),
-     (assign, "$novicemaster_opponent_troop", "trp_novice_fighter"),
+     (assign, "$novicemain_opponent_troop", "trp_novice_fighter"),
      (assign, "$training_system_explained", 1),
      ]],
   [anyone,"trainer_practice_1",
    [(ge,"$novice_training_difficulty",4)],
- "You have passed all stages of training. But if you want you can still practice. Are you ready?", "novicemaster_are_you_ready",
+ "You have passed all stages of training. But if you want you can still practice. Are you ready?", "novicemain_are_you_ready",
    [(assign,"$num_opponents_to_beat_in_a_row",99999)]],
   [anyone,"trainer_practice_1",
    [(eq,"$num_opponents_to_beat_in_a_row",0),(eq,"$novice_training_difficulty",0)],
@@ -36189,7 +36189,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [[assign,"$num_opponents_to_beat_in_a_row",3],
     [val_add,"$novice_training_difficulty",1],
     [add_xp_to_troop,100],
-    [assign,"$novicemaster_opponent_troop","trp_regular_fighter"]]],
+    [assign,"$novicemain_opponent_troop","trp_regular_fighter"]]],
   [anyone,"trainer_practice_1",
    [[eq,"$num_opponents_to_beat_in_a_row",0],[eq,"$novice_training_difficulty",1]],
  "Way to go {lad/lass}. Welcome to the third training level. From now on your opponents will be veteran fighters; soldiers and arena regulars and the like. These guys know some dirty tricks, so keep your defense up.",
@@ -36197,7 +36197,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [[assign,"$num_opponents_to_beat_in_a_row",3],
     [val_add,"$novice_training_difficulty",1],
     [add_xp_to_troop,100],
-    [assign,"$novicemaster_opponent_troop","trp_veteran_fighter"]]],
+    [assign,"$novicemain_opponent_troop","trp_veteran_fighter"]]],
   [anyone,"trainer_practice_1",
    [[eq,"$num_opponents_to_beat_in_a_row",0],[eq,"$novice_training_difficulty",2]],
  "You've got the heart of a champion, {lad/lass}, and the sword arm to match. From now on your opponents will be champion fighters.\
@@ -36206,27 +36206,27 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [[assign,"$num_opponents_to_beat_in_a_row",3],
     [val_add,"$novice_training_difficulty",1],
     [add_xp_to_troop,100],
-    [assign,"$novicemaster_opponent_troop","trp_champion_fighter"]]],
+    [assign,"$novicemain_opponent_troop","trp_champion_fighter"]]],
   [anyone,"trainer_practice_1",
    [[eq,"$num_opponents_to_beat_in_a_row",0],[eq,"$novice_training_difficulty",3]],
- "It does my heart good to see such a promising talent. You have passed all tiers of training. You can now tell everyone that you have been trained by the master of the training field.",
-   "novicemaster_finish_training",
+ "It does my heart good to see such a promising talent. You have passed all tiers of training. You can now tell everyone that you have been trained by the main of the training field.",
+   "novicemain_finish_training",
    [[assign,"$num_opponents_to_beat_in_a_row",3],
     [val_add,"$novice_training_difficulty",1],
     [add_xp_to_troop,300]]],
-  [anyone|plyr,"novicemaster_finish_training", [], "Thank you master.", "novicemaster_finish_training_2",[]],
-  [anyone,"novicemaster_finish_training_2", [], "I wish you good luck in the tournaments. And, don't forget,\
+  [anyone|plyr,"novicemain_finish_training", [], "Thank you main.", "novicemain_finish_training_2",[]],
+  [anyone,"novicemain_finish_training_2", [], "I wish you good luck in the tournaments. And, don't forget,\
   if you want to practice your swordwork anytime, just come and say the word.", "close_window",[]],
   [anyone,"trainer_practice_1",
    [
      (assign, reg8, "$num_opponents_to_beat_in_a_row"),
-     (str_store_troop_name, s9, "$novicemaster_opponent_troop"),
+     (str_store_troop_name, s9, "$novicemain_opponent_troop"),
      ],
  "Your next opponent will be a {s9}. You need to win {reg8} more\
- fights in a row to advance to the next stage. Are you ready?", "novicemaster_are_you_ready",
+ fights in a row to advance to the next stage. Are you ready?", "novicemain_are_you_ready",
    []],
-  [anyone|plyr,"novicemaster_are_you_ready", [], "Yes I am.", "novicemaster_ready_to_fight",[]],
-  [anyone,"novicemaster_ready_to_fight", [], "Here you go then. Good luck.", "close_window",
+  [anyone|plyr,"novicemain_are_you_ready", [], "Yes I am.", "novicemain_ready_to_fight",[]],
+  [anyone,"novicemain_ready_to_fight", [], "Here you go then. Good luck.", "close_window",
    [
      (assign, "$training_fight_won", 0),
      (assign, "$waiting_for_training_fight_result", 1),
@@ -36238,14 +36238,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, reg3, 3),
      (shuffle_range, 0, 4),
      (set_visitor, reg0, "trp_player"),
-     (set_visitor, reg1, "$novicemaster_opponent_troop"),
+     (set_visitor, reg1, "$novicemain_opponent_troop"),
      (set_visitor, 4, "$g_talk_troop"),
      (set_jump_mission, "mt_training_ground_trainer_training"),
      (jump_to_scene, "$g_training_ground_melee_training_scene"),
      ]],
 
-  [anyone|plyr,"novicemaster_are_you_ready", [], "Just a minute. I am not ready yet.", "novicemaster_not_ready",[]],
-  [anyone,"novicemaster_not_ready", [], "Hey, You will never make it if you don't practice.", "close_window",[]],
+  [anyone|plyr,"novicemain_are_you_ready", [], "Just a minute. I am not ready yet.", "novicemain_not_ready",[]],
+  [anyone,"novicemain_not_ready", [], "Hey, You will never make it if you don't practice.", "close_window",[]],
 
 
 #Crooks
@@ -36422,7 +36422,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##
 
   [anyone|auto_proceed,"start", [
-  (is_between,"$g_talk_troop","trp_town_1_master_craftsman", "trp_zendar_chest"),
+  (is_between,"$g_talk_troop","trp_town_1_main_craftsman", "trp_zendar_chest"),
   (party_get_slot, ":days_until_complete", "$g_encountered_party", slot_center_player_enterprise_days_until_complete),
   (ge, ":days_until_complete", 2),
   (assign, reg4, ":days_until_complete"),
@@ -36434,37 +36434,37 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    "Good day, my {lord/lady}. We hope to begin production in about {reg4} days", "close_window",[]],
 
   [anyone,"start", [
-  (is_between,"$g_talk_troop","trp_town_1_master_craftsman", "trp_zendar_chest"),
+  (is_between,"$g_talk_troop","trp_town_1_main_craftsman", "trp_zendar_chest"),
   ],
-   "Good day, my {lord/lady}. We are honored that you have chosen to visit us. What do you require?", "master_craftsman_talk",[]],
+   "Good day, my {lord/lady}. We are honored that you have chosen to visit us. What do you require?", "main_craftsman_talk",[]],
 
-  [anyone,"master_craftsman_pretalk", [],
-   "Very good, my {lord/lady}. Do you require anything else?", "master_craftsman_talk",[]],
+  [anyone,"main_craftsman_pretalk", [],
+   "Very good, my {lord/lady}. Do you require anything else?", "main_craftsman_talk",[]],
 
-  [anyone|plyr,"master_craftsman_talk", [],
-   "Let's go over the accounts.", "master_craftsman_accounts",[]],
+  [anyone|plyr,"main_craftsman_talk", [],
+   "Let's go over the accounts.", "main_craftsman_accounts",[]],
 
-  [anyone|plyr,"master_craftsman_talk", [],
-   "Let's check the inventories.", "master_craftsman_pretalk",[
+  [anyone|plyr,"main_craftsman_talk", [],
+   "Let's check the inventories.", "main_craftsman_pretalk",[
    (change_screen_loot, "$g_talk_troop"),
    ]],
 
-  [anyone|plyr,"master_craftsman_talk", [
+  [anyone|plyr,"main_craftsman_talk", [
   (party_slot_eq, "$g_encountered_party", slot_center_player_enterprise_production_order, 1),
   ],
-   "I'd like you to sell goods as they are produced.", "master_craftsman_pretalk",[
+   "I'd like you to sell goods as they are produced.", "main_craftsman_pretalk",[
   (party_set_slot, "$g_encountered_party", slot_center_player_enterprise_production_order, 0),
    ]],
 
-  [anyone|plyr,"master_craftsman_talk", [
+  [anyone|plyr,"main_craftsman_talk", [
   (party_slot_eq, "$g_encountered_party", slot_center_player_enterprise_production_order, 0),
   ],
-   "I'd like you to keep all goods in the warehouse until I arrive.", "master_craftsman_pretalk",[
+   "I'd like you to keep all goods in the warehouse until I arrive.", "main_craftsman_pretalk",[
   (party_set_slot, "$g_encountered_party", slot_center_player_enterprise_production_order, 1),
    ]],
 
-  [anyone,"master_craftsman_accounts", [
-  ], "We currently produce {s3} worth {reg1} denars each week, while the quantity of {s4} needed to manufacture it costs {reg2}, and labor and upkeep are {reg3}.{s9} This means that we theoretically make a {s12} of {reg0} denars a week, assuming that we have no raw materials in the inventories, and that we sell directly to the market.", "master_craftsman_pretalk",
+  [anyone,"main_craftsman_accounts", [
+  ], "We currently produce {s3} worth {reg1} denars each week, while the quantity of {s4} needed to manufacture it costs {reg2}, and labor and upkeep are {reg3}.{s9} This means that we theoretically make a {s12} of {reg0} denars a week, assuming that we have no raw materials in the inventories, and that we sell directly to the market.", "main_craftsman_pretalk",
   [
     (party_get_slot, ":item_produced", "$g_encountered_party", slot_center_player_enterprise),
     (call_script, "script_process_player_enterprise", ":item_produced", "$g_encountered_party"),
@@ -36491,21 +36491,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-  [anyone|plyr,"master_craftsman_talk", [
-  ], "Could you explain my options related to production?", "master_craftsman_production_options",[]],
+  [anyone|plyr,"main_craftsman_talk", [
+  ], "Could you explain my options related to production?", "main_craftsman_production_options",[]],
 
-  [anyone,"master_craftsman_production_options", [
+  [anyone,"main_craftsman_production_options", [
   (str_store_party_name, s5, "$g_encountered_party"),
-  ], "Certainly, my {lord/lady}. Most of the time, the most profitable thing for you to do would be to let us buy raw materials and sell the finished goods directly to the market. Because of our longstanding relations with the local merchants, we can usually get a very good price.", "master_craftsman_production_options_2",[]],
+  ], "Certainly, my {lord/lady}. Most of the time, the most profitable thing for you to do would be to let us buy raw materials and sell the finished goods directly to the market. Because of our longstanding relations with the local merchants, we can usually get a very good price.", "main_craftsman_production_options_2",[]],
 
-  [anyone,"master_craftsman_production_options_2", [
+  [anyone,"main_craftsman_production_options_2", [
   (str_store_party_name, s5, "$g_encountered_party"),
-  ], "However, if you find that you can acquire raw materials cheaper outside {s5}, you may place them in the inventories, and we will use them instead of buying from the market. Likewise, if you feel that you can get a better price for the finished goods elsewhere, then you may ask us to deposit what we produce in our warehouses for you to take.", "master_craftsman_pretalk",[]],
+  ], "However, if you find that you can acquire raw materials cheaper outside {s5}, you may place them in the inventories, and we will use them instead of buying from the market. Likewise, if you feel that you can get a better price for the finished goods elsewhere, then you may ask us to deposit what we produce in our warehouses for you to take.", "main_craftsman_pretalk",[]],
 
-  [anyone|plyr,"master_craftsman_talk", [
-  ], "It will no longer be possible for me to continue operating this enterprise.", "master_craftsman_auction_price",[]],
+  [anyone|plyr,"main_craftsman_talk", [
+  ], "It will no longer be possible for me to continue operating this enterprise.", "main_craftsman_auction_price",[]],
 
-  [anyone,"master_craftsman_auction_price", [
+  [anyone,"main_craftsman_auction_price", [
   (party_get_slot, ":item_produced", "$g_encountered_party", slot_center_player_enterprise),
   (item_get_slot, ":base_price",":item_produced", slot_item_base_price),
   (item_get_slot, ":number_runs", ":item_produced", slot_item_output_per_run),
@@ -36537,10 +36537,10 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   (assign, reg4, "$liquidation_price"),
 
-  ], "A pity, my {lord/lady}. If we sell the land and the equipment, and liquidate the inventories, I estimate that we can get {reg4} denars.", "master_craftsman_auction_decide",[]],
+  ], "A pity, my {lord/lady}. If we sell the land and the equipment, and liquidate the inventories, I estimate that we can get {reg4} denars.", "main_craftsman_auction_decide",[]],
 
-  [anyone|plyr,"master_craftsman_auction_decide", [
-  ], "That sounds reasonable. Please proceed with the sale.", "master_craftsman_liquidation",[
+  [anyone|plyr,"main_craftsman_auction_decide", [
+  ], "That sounds reasonable. Please proceed with the sale.", "main_craftsman_liquidation",[
   (troop_add_gold, "trp_player", "$liquidation_price"),
   (troop_clear_inventory, "$g_talk_troop"),
   (party_set_slot, "$g_encountered_party", slot_center_player_enterprise, 0),
@@ -36548,19 +36548,19 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   ]],
 
-  [anyone|plyr,"master_craftsman_auction_decide", [
-  ], "Hmm. Let's hold off on that.", "master_craftsman_pretalk",[]],
+  [anyone|plyr,"main_craftsman_auction_decide", [
+  ], "Hmm. Let's hold off on that.", "main_craftsman_pretalk",[]],
 
-  [anyone,"master_craftsman_liquidation", [
+  [anyone,"main_craftsman_liquidation", [
   ], "As you wish. It was an honor to have been in your employ.", "close_window",[
     (finish_mission),
   ]],
 
-  [anyone|plyr,"master_craftsman_talk", [
+  [anyone|plyr,"main_craftsman_talk", [
   (eq, 1, 0),
   ], "{!}As you wish, {sir/my lady}. It was an honor to work in your employ.", "close_window",[]],
 
-  [anyone|plyr,"master_craftsman_talk", [],
+  [anyone|plyr,"main_craftsman_talk", [],
    "That is all for now.", "close_window",[]],
 
 
@@ -36580,7 +36580,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    ##diplomacy end+
   [anyone ,"start", [(is_between,"$g_talk_troop",mayors_begin,mayors_end),(eq,"$g_talk_troop_met",0),
                      (str_store_party_name, s9, "$current_town")],
-   "Hello stranger, you seem to be new to {s9}. I am the guild master of the town.", "mayor_talk",[]],
+   "Hello stranger, you seem to be new to {s9}. I am the guild main of the town.", "mayor_talk",[]],
 
   [anyone ,"start", [(is_between,"$g_talk_troop",mayors_begin,mayors_end)],
    "Good day, {playername}.", "mayor_begin",
@@ -37214,34 +37214,34 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   (troop_remove_gold, "trp_player", "$enterprise_cost"),
   (store_sub, ":current_town_order", "$current_town", towns_begin),
-  (store_add, ":craftsman_troop", ":current_town_order", "trp_town_1_master_craftsman"),
+  (store_add, ":craftsman_troop", ":current_town_order", "trp_town_1_main_craftsman"),
   (try_begin),
 	(eq, "$enterprise_production", "itm_bread"),
-    (troop_set_name, ":craftsman_troop", "str_master_miller"),
+    (troop_set_name, ":craftsman_troop", "str_main_miller"),
   (else_try),
 	(eq, "$enterprise_production", "itm_ale"),
-    (troop_set_name, ":craftsman_troop", "str_master_brewer"),
+    (troop_set_name, ":craftsman_troop", "str_main_brewer"),
   (else_try),
 	(eq, "$enterprise_production", "itm_oil"),
-    (troop_set_name, ":craftsman_troop", "str_master_presser"),
+    (troop_set_name, ":craftsman_troop", "str_main_presser"),
   (else_try),
 	(eq, "$enterprise_production", "itm_tools"),
-    (troop_set_name, ":craftsman_troop", "str_master_smith"),
+    (troop_set_name, ":craftsman_troop", "str_main_smith"),
   (else_try),
 	(eq, "$enterprise_production", "itm_wool_cloth"),
-    (troop_set_name, ":craftsman_troop", "str_master_weaver"),
+    (troop_set_name, ":craftsman_troop", "str_main_weaver"),
   (else_try),
 	(eq, "$enterprise_production", "itm_linen"),
-    (troop_set_name, ":craftsman_troop", "str_master_weaver"),
+    (troop_set_name, ":craftsman_troop", "str_main_weaver"),
   (else_try),
 	(eq, "$enterprise_production", "itm_leatherwork"),
-    (troop_set_name, ":craftsman_troop", "str_master_tanner"),
+    (troop_set_name, ":craftsman_troop", "str_main_tanner"),
   (else_try),
 	(eq, "$enterprise_production", "itm_velvet"),
-    (troop_set_name, ":craftsman_troop", "str_master_dyer"),
+    (troop_set_name, ":craftsman_troop", "str_main_dyer"),
   (else_try),
 	(eq, "$enterprise_production", "itm_wine"),
-    (troop_set_name, ":craftsman_troop", "str_master_vinter"),
+    (troop_set_name, ":craftsman_troop", "str_main_vinter"),
   (try_end),
   ]],
 
@@ -37250,7 +37250,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone,"mayor_investment_purchase",[], "Very good. Your enterprise should be up and running in about a week. When next you come, and thereafter, you should speak to your {s4} about its operations.", "mayor_pretalk",[
   (store_sub, ":current_town_order", "$current_town", towns_begin),
-  (store_add, ":craftsman_troop", ":current_town_order", "trp_town_1_master_craftsman"),
+  (store_add, ":craftsman_troop", ":current_town_order", "trp_town_1_main_craftsman"),
   (str_store_troop_name, s4, ":craftsman_troop"),
 
   ]],
@@ -37261,7 +37261,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[]],
 
   [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
-   "I am the guildmaster of {s9}. You can say I am the leader of the good people of {s9}.\
+   "I am the guildmain of {s9}. You can say I am the leader of the good people of {s9}.\
  I can help you find a job if you are looking for some honest work.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",0)]],
 
   [anyone|plyr,"mayor_info_talk",[(eq, "$mayor_info_lord_told",0)], "Who rules this town?", "mayor_info_lord",[]],
@@ -37281,7 +37281,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (call_script, "script_dplmc_store_troop_is_female", ":town_lord"),],#Next line, He -> {reg0?She:He}
    "Our town's lord and protector is {s10}. {reg0?She:He} owns the castle and sometimes resides there, and collects taxes from the town.\
  However we regulate ourselves in most of the matters that concern ourselves.\
- As the town's guildmaster I have the authority to decide those things.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
+ As the town's guildmain I have the authority to decide those things.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
  ##diplomacy end+
 
   [anyone|plyr,"mayor_info_talk",[], "That's all I need to know. Thanks.", "mayor_pretalk",[]],
@@ -37301,7 +37301,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 										(str_store_string, s10, "str_s10_and_s11"),
 									(try_end),
 									],
-   "Politics? Good heaven, the guild has nothing to do with politics. We are loyal servants of {s10}. We merely govern our own affairs, and pass on the townspeople's concerns to our lords and masters, and maybe warn them from time to time against evil advice. Anyway, what did you wish to ask?", "mayor_political_questions",[]],
+   "Politics? Good heaven, the guild has nothing to do with politics. We are loyal servants of {s10}. We merely govern our own affairs, and pass on the townspeople's concerns to our lords and mains, and maybe warn them from time to time against evil advice. Anyway, what did you wish to ask?", "mayor_political_questions",[]],
 
   [anyone,"mayor_prepolitics",[ (faction_get_slot, ":faction_leader","$g_encountered_party_faction",slot_faction_leader),
 								(try_begin),
@@ -37489,7 +37489,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    (str_store_party_name_link, s13, "$g_encountered_party"),
    (str_store_party_name, s4, "$g_encountered_party"),
    (setup_quest_text, "qst_deal_with_looters"),
-   (str_store_string, s2, "@The Guildmaster of {s13} has asked you to deal with looters in the surrounding countryside."),
+   (str_store_string, s2, "@The Guildmain of {s13} has asked you to deal with looters in the surrounding countryside."),
    (call_script, "script_start_quest", "qst_deal_with_looters", "$g_talk_troop"),
    (assign, "$g_leave_encounter",1),
   ],
@@ -37934,7 +37934,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                  (str_store_party_name_link, s4, "$g_encountered_party"),
                                  (str_store_party_name_link, s3, ":quest_target_center"),
                                  (setup_quest_text, "qst_kidnapped_girl"),
-                                 (str_store_string, s2, "@Guildmaster of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
+                                 (str_store_string, s2, "@Guildmain of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.\
  You are to meet the bandits near {s3} and pay them the ransom fee.\
  After that you are to bring the girl back to {s4}."),
                                  (call_script, "script_start_quest", "qst_kidnapped_girl", "$g_talk_troop"),
@@ -38210,7 +38210,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (str_store_faction_name_link, s14, ":quest_target_faction"),
      (str_store_faction_name_link, s15, "$g_encountered_party_faction"),
      (setup_quest_text,"qst_persuade_lords_to_make_peace"),
-     (str_store_string, s2, "@Guildmaster of {s4} promised you {reg12} denars if you can make sure that\
+     (str_store_string, s2, "@Guildmain of {s4} promised you {reg12} denars if you can make sure that\
  {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.\
  In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made."),
      (call_script, "script_start_quest", "qst_persuade_lords_to_make_peace", "$g_talk_troop"),
@@ -38256,7 +38256,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    [
      (str_store_party_name_link, s14, "$g_encountered_party"),
      (setup_quest_text, "qst_deal_with_night_bandits"),
-     (str_store_string, s2, "@The Guildmaster of {s14} has asked you to deal with a group of bandits terrorising the streets of {s14}. They only come out at night, and only attack lone travellers on the streets."),
+     (str_store_string, s2, "@The Guildmain of {s14} has asked you to deal with a group of bandits terrorising the streets of {s14}. They only come out at night, and only attack lone travellers on the streets."),
      (call_script, "script_start_quest", "qst_deal_with_night_bandits", "$g_talk_troop"),
      ]],
 
@@ -38296,7 +38296,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (str_store_party_name_link, s13, ":target_center"),
      (quest_get_slot, reg8, "qst_move_cattle_herd", slot_quest_gold_reward),
      (setup_quest_text, "qst_move_cattle_herd"),
-     (str_store_string, s2, "@Guildmaster of {s10} asked you to move a cattle herd to {s13}. You will earn {reg8} denars in return."),
+     (str_store_string, s2, "@Guildmain of {s10} asked you to move a cattle herd to {s13}. You will earn {reg8} denars in return."),
      (call_script, "script_start_quest", "qst_move_cattle_herd", "$g_talk_troop"),
      ]],
   [anyone|plyr,"move_cattle_herd_quest_brief", [],
@@ -38959,13 +38959,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                                                  (eq, ":elder_quest", "qst_deliver_food_to_city"),
 												 (check_quest_failed, "qst_deliver_food_to_city"),
                                                  ],
-   "I am sorry but I lost the delivery, I explained it to the guild master.", "village_elder_deliver_food_failed",
+   "I am sorry but I lost the delivery, I explained it to the guild main.", "village_elder_deliver_food_failed",
    []],
   [anyone|plyr,"village_elder_active_mission_2",[(store_partner_quest,":elder_quest"),
                                                  (eq, ":elder_quest", "qst_deliver_food_to_city"),
 												 (check_quest_succeeded, "qst_deliver_food_to_city"),
                                                  ],
-   "Yes, I carried the delivery to the city and gave it to the guild master, here is the money he gave me for it.", "village_elder_deliver_food_succeed",
+   "Yes, I carried the delivery to the city and gave it to the guild main, here is the money he gave me for it.", "village_elder_deliver_food_succeed",
    [(quest_get_slot, ":money_for_elder", "qst_deliver_food_to_city", slot_quest_gold_reward),
     (quest_get_slot, ":quest_target_amount", "qst_deliver_food_to_city", slot_quest_target_amount),
 	(val_mul, ":money_for_elder", ":quest_target_amount"),
@@ -39178,7 +39178,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (setup_quest_text,"$random_quest_no"),
 	 (quest_get_slot, ":item_type", "$random_quest_no", slot_quest_target_item),
 	 (str_store_item_name, s6, ":item_type"),
-     (str_store_string, s2, "@The elder of the village of {s3} asked you to deliver {reg5} units of {s6} to the guild master of {s4}."),
+     (str_store_string, s2, "@The elder of the village of {s3} asked you to deliver {reg5} units of {s6} to the guild main of {s4}."),
    ]],
 
   [anyone|plyr,"village_elder_tell_deliver_food_to_city_mission", [],
@@ -39259,7 +39259,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone|plyr,"goods_merchant_talk", [], "Nothing. Thanks.", "close_window",[]],
 
-  [anyone,"trade_info_request", [], "That information can be best obtained from caravan masters\
+  [anyone,"trade_info_request", [], "That information can be best obtained from caravan mains\
  and travelling merchants. If you want I can send you to the district where foreign merchants stay at when they come to the town.\
  If you spend some time there and listen to the talk,\
  you can learn a lot about what to buy and where to sell it.", "trade_info_request_2",[]],
@@ -39389,17 +39389,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #### ARENA MASTERS
 #############################################################################
   [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     (is_between,reg(1),arena_mains_begin,arena_mains_end),
                      (assign, "$arena_reward_asked", 0), #set some variables.
                      (assign, "$arena_tournaments_asked", 0),
                      (eq,1,0),
                      ],
    "{!}.", "arena_intro_1",[]],
   [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
-                     (eq,"$arena_master_first_talk", 0),
+                     (is_between,reg(1),arena_mains_begin,arena_mains_end),
+                     (eq,"$arena_main_first_talk", 0),
                      ],
-   "Good day friend. If you came to watch the tournaments you came in vain. There won't be a tournament here anytime soon.", "arena_intro_1",[(assign,"$arena_master_first_talk", 1)]],
+   "Good day friend. If you came to watch the tournaments you came in vain. There won't be a tournament here anytime soon.", "arena_intro_1",[(assign,"$arena_main_first_talk", 1)]],
   [anyone|plyr,"arena_intro_1", [], "Tournaments? So they hold the tournaments here...", "arena_intro_2",[]],
   [anyone,"arena_intro_2", [], "Yes. You should see this place during one of the tournament fights.\
  Everyone from the town and nearby villages comes here. The crowd becomes mad with excitement.\
@@ -39430,46 +39430,46 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       ], "Some of the wealthy townsmen offer prizes for those fighters who show great skill in the fights.\
  If you can beat {reg1} opponents before going down, you'll earn {reg11} denars. You'll get {reg12} denars for striking down at least {reg2} opponents,\
  {reg13} denars if you can defeat {reg3} opponents, and {reg14} denars if you can survive long enough to beat {reg4} opponents.\
- If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_master_melee_pretalk",[]],
+ If you can manage to be the last {man/fighter} standing, you'll earn the great prize of the fights, {reg15} denars. Sounds good, eh?", "arena_main_melee_pretalk",[]],
   [anyone|plyr,"arena_training_melee_intro_2", [], "Can I join too?", "arena_training_melee_intro_3",[]],
   [anyone,"arena_training_melee_intro_3", [], "Ha ha. You would have to be out of your mind not to. Of course. The melee fights are open to all.\
- Actually there is going to be a fight soon. You can go and hop in if you want to.", "arena_master_melee_talk",[]],
+ Actually there is going to be a fight soon. You can go and hop in if you want to.", "arena_main_melee_talk",[]],
 
 
   [anyone ,"start", [(store_conversation_troop,reg(1)),
-                     (is_between,reg(1),arena_masters_begin,arena_masters_end),
+                     (is_between,reg(1),arena_mains_begin,arena_mains_end),
                      (eq,"$g_talk_troop_met", 0),
                      ],
-   "Hello. You seem to be new here. Care to share your name?", "arena_master_intro_1",[]],
-  [anyone|plyr,"arena_master_intro_1", [], "I am {playername}.", "arena_master_intro_2",[]],
-  [anyone,"arena_master_intro_2", [(store_encountered_party,reg(2)),(str_store_party_name,1,reg(2))],
-   "Well met {playername}. I am the master of the tournaments here at {s1}. Talk to me if you want to join the fights.", "arena_master_pre_talk",[]],
+   "Hello. You seem to be new here. Care to share your name?", "arena_main_intro_1",[]],
+  [anyone|plyr,"arena_main_intro_1", [], "I am {playername}.", "arena_main_intro_2",[]],
+  [anyone,"arena_main_intro_2", [(store_encountered_party,reg(2)),(str_store_party_name,1,reg(2))],
+   "Well met {playername}. I am the main of the tournaments here at {s1}. Talk to me if you want to join the fights.", "arena_main_pre_talk",[]],
 
 
-  [anyone|auto_proceed ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),
+  [anyone|auto_proceed ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_mains_begin,arena_mains_end),
                      (eq, "$last_training_fight_town", "$current_town"),
                      (store_current_hours,":cur_hours"),
                      (val_add, ":cur_hours", -4),
                      (lt, ":cur_hours", "$training_fight_time")],
-   ".", "arena_master_fight_result",[(assign, "$arena_reward_asked", 0)]],
+   ".", "arena_main_fight_result",[(assign, "$arena_reward_asked", 0)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
      (eq, "$g_arena_training_kills", 0)
      ],
-   "Ha-ha, that's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
+   "Ha-ha, that's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_main_pre_talk",[(assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
      (lt, "$g_arena_training_kills", arena_tier1_opponents_to_beat),
      (assign, reg8, "$g_arena_training_kills")
      ],
    "Hey, you managed to take down {reg8} opponents. Not bad. But that won't bring you any prize money.\
- Now, if I were you, I would go back there and show everyone what I can do...", "arena_master_pre_talk",[(assign, "$last_training_fight_town", -1)]],
+ Now, if I were you, I would go back there and show everyone what I can do...", "arena_main_pre_talk",[(assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
      (lt, "$g_arena_training_kills", arena_tier2_opponents_to_beat),
@@ -39477,12 +39477,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, reg10, arena_tier1_prize),
      ],
    "You put up quite a good fight there. Good moves. You definitely show promise.\
- And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",[
+ And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_main_pre_talk",[
      (call_script, "script_troop_add_gold", "trp_player", arena_tier1_prize),
      (add_xp_to_troop,5,"trp_player"),
      (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
      (lt, "$g_arena_training_kills", arena_tier3_opponents_to_beat),
@@ -39491,12 +39491,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, reg12, arena_tier2_opponents_to_beat),
      ],
    "That was a good fight you put up there. You managed to take down no less than {reg8} opponents.\
- And of course, you earned a prize money of {reg10} denars.", "arena_master_pre_talk",[
+ And of course, you earned a prize money of {reg10} denars.", "arena_main_pre_talk",[
      (call_script, "script_troop_add_gold", "trp_player", arena_tier2_prize),
      (add_xp_to_troop,10,"trp_player"),
      (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
      (lt, "$g_arena_training_kills", arena_tier4_opponents_to_beat),
@@ -39504,12 +39504,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, reg10, arena_tier3_prize)
      ],
    "Your performance was amazing! You are without doubt a very skilled fighter.\
- Not everyone can knock down {reg8} people in the fights. Of course you deserve a prize with that performance: {reg10} denars. Nice, eh?", "arena_master_pre_talk",[
+ Not everyone can knock down {reg8} people in the fights. Of course you deserve a prize with that performance: {reg10} denars. Nice, eh?", "arena_main_pre_talk",[
      (call_script, "script_troop_add_gold", "trp_player", arena_tier3_prize),
      (add_xp_to_troop,10,"trp_player"),
      (assign, "$last_training_fight_town", -1)]],
 
-  [anyone ,"arena_master_fight_result",
+  [anyone ,"arena_main_fight_result",
    [
      (eq, "$g_arena_training_won", 0),
 	 (lt, "$g_arena_training_kills", arena_tier5_opponents_to_beat), ##new 0.751
@@ -39517,21 +39517,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, reg10, arena_tier4_prize),
      ],
    "That was damned good fighting, {playername}. You have very good moves, excellent tactics.\
- And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",
+ And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_main_pre_talk",
    [
      (call_script, "script_troop_add_gold", "trp_player", arena_tier4_prize),
      (add_xp_to_troop,10,"trp_player"),
      (assign, "$last_training_fight_town", -1),
      ]],
 
-  [anyone ,"arena_master_fight_result",   #############
+  [anyone ,"arena_main_fight_result",   #############
    [                                      ##new 0.751##
      (eq, "$g_arena_training_won", 0),    #############
      (assign, reg8, "$g_arena_training_kills"),
      (assign, reg10, arena_tier5_prize),
      ],
    "That was damned good fighting, {playername}. You have very good moves, excellent tactics.\
- And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_master_pre_talk",
+ And you earned a prize of {reg10} denars for knocking down {reg8} opponents.", "arena_main_pre_talk",
    [
      (call_script, "script_troop_add_gold", "trp_player", arena_tier5_prize),
      (add_xp_to_troop,10,"trp_player"),
@@ -39539,26 +39539,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      ]],
 
 
-  [anyone ,"arena_master_fight_result", [(assign, reg10, arena_grand_prize)],
-   "Congratulations champion! Your fight there was something to remember! You managed to be the last fighter standing beating down everyone else. And of course you won the grand prize of the fights: {reg10} denars.", "arena_master_pre_talk",[
+  [anyone ,"arena_main_fight_result", [(assign, reg10, arena_grand_prize)],
+   "Congratulations champion! Your fight there was something to remember! You managed to be the last fighter standing beating down everyone else. And of course you won the grand prize of the fights: {reg10} denars.", "arena_main_pre_talk",[
      (call_script, "script_troop_add_gold", "trp_player", arena_grand_prize),
      (add_xp_to_troop,200,"trp_player"),
      (assign, "$last_training_fight_town", -1)]],
 
 
-  [anyone ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end)],
-   "Hello {playername}. Good to see you again.", "arena_master_pre_talk",[(assign, "$arena_reward_asked", 0)]],
+  [anyone ,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_mains_begin,arena_mains_end)],
+   "Hello {playername}. Good to see you again.", "arena_main_pre_talk",[(assign, "$arena_reward_asked", 0)]],
 
 
-  [anyone,"arena_master_pre_talk", [], "What would you like to do?", "arena_master_talk",[]],
+  [anyone,"arena_main_pre_talk", [], "What would you like to do?", "arena_main_talk",[]],
 
 
-#  [anyone|plyr,"arena_master_talk", [], "About the arena fights...", "arena_master_melee",[]],
-  [anyone|plyr,"arena_master_talk", [], "About the melee fights...", "arena_master_melee_pretalk",[]],
-  [anyone|plyr,"arena_master_talk", [(eq, "$arena_tournaments_asked", 0)], "Will there be a tournament in nearby towns soon?", "arena_master_ask_tournaments",[(assign, "$arena_tournaments_asked", 1)]],
-  [anyone|plyr,"arena_master_talk", [], "I need to leave now. Good bye.", "close_window",[]],
+#  [anyone|plyr,"arena_main_talk", [], "About the arena fights...", "arena_main_melee",[]],
+  [anyone|plyr,"arena_main_talk", [], "About the melee fights...", "arena_main_melee_pretalk",[]],
+  [anyone|plyr,"arena_main_talk", [(eq, "$arena_tournaments_asked", 0)], "Will there be a tournament in nearby towns soon?", "arena_main_ask_tournaments",[(assign, "$arena_tournaments_asked", 1)]],
+  [anyone|plyr,"arena_main_talk", [], "I need to leave now. Good bye.", "close_window",[]],
 
-  [anyone,"arena_master_ask_tournaments", [], "{reg2?There won't be any tournaments any time soon.:{reg1?Tournaments are:A tournament is} going to be held at {s15}.}", "arena_master_talk",
+  [anyone,"arena_main_ask_tournaments", [], "{reg2?There won't be any tournaments any time soon.:{reg1?Tournaments are:A tournament is} going to be held at {s15}.}", "arena_main_talk",
    [
        (assign, ":num_tournaments", 0),
        (try_for_range_backwards, ":town_no", towns_begin, towns_end),
@@ -39584,8 +39584,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (try_end),
    ]],
 
-  [anyone,"arena_master_melee_pretalk", [], "There will be a fight here soon. You can go and jump in if you like.", "arena_master_melee_talk",[]],
-  [anyone|plyr,"arena_master_melee_talk", [], "Good. That's what I am going to do.", "close_window",
+  [anyone,"arena_main_melee_pretalk", [], "There will be a fight here soon. You can go and jump in if you like.", "arena_main_melee_talk",[]],
+  [anyone|plyr,"arena_main_melee_talk", [], "Good. That's what I am going to do.", "close_window",
    [
     (assign, "$last_training_fight_town", "$current_town"),
     (store_current_hours,"$training_fight_time"),
@@ -39598,42 +39598,42 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (set_jump_mission,"mt_arena_melee_fight"),
     (jump_to_scene, ":scene"),
     ]],
-  [anyone|plyr,"arena_master_melee_talk", [], "Thanks. But I will give my bruises some time to heal.", "arena_master_melee_reject",[]],
-  [anyone,"arena_master_melee_reject", [], "Good {man/girl}. That's clever of you.", "arena_master_pre_talk",[]],
+  [anyone|plyr,"arena_main_melee_talk", [], "Thanks. But I will give my bruises some time to heal.", "arena_main_melee_reject",[]],
+  [anyone,"arena_main_melee_reject", [], "Good {man/girl}. That's clever of you.", "arena_main_pre_talk",[]],
 
-  [anyone|plyr,"arena_master_melee_talk", [(eq, "$arena_reward_asked", 0)], "Actually, can you tell me about the rewards again?", "arena_training_melee_explain_reward",[(assign, "$arena_reward_asked", 1)]],
+  [anyone|plyr,"arena_main_melee_talk", [(eq, "$arena_reward_asked", 0)], "Actually, can you tell me about the rewards again?", "arena_training_melee_explain_reward",[(assign, "$arena_reward_asked", 1)]],
 
-#  [anyone,"arena_master_pre_talk",
+#  [anyone,"arena_main_pre_talk",
 #   [(eq,"$arena_join_or_watch",1),
 #    (ge,"$arena_bet_amount",1),
 #    (eq,"$arena_bet_team","$arena_winner_team"),
 #    (assign,reg(5),"$arena_win_amount")],
-# "You've won the bet, eh? Let me see. The sum you have earned amounts to {reg5} denars. Here you go.", "arena_master_pre_talk",
+# "You've won the bet, eh? Let me see. The sum you have earned amounts to {reg5} denars. Here you go.", "arena_main_pre_talk",
 #   [(call_script, "script_troop_add_gold", "trp_player", "$arena_win_amount"),
 #    (assign,"$arena_bet_amount",0),
 #    (assign,"$arena_win_amount",0),
 #    ]],
 
-#  [anyone,"arena_master_pre_talk",
+#  [anyone,"arena_main_pre_talk",
 #   [(eq,"$arena_join_or_watch",0),
 #    (ge,"$arena_bet_amount",1),
 #    (eq,"$arena_fight_won",1),
 #    (assign,reg(5),"$arena_win_amount"),
 #   ],
-# "And you had the good sense to bet on yourself too. Hmm let me see. You have won yourself some {reg5} denars. Here you are.", "arena_master_pre_talk",
+# "And you had the good sense to bet on yourself too. Hmm let me see. You have won yourself some {reg5} denars. Here you are.", "arena_main_pre_talk",
 #   [(call_script, "script_troop_add_gold", "trp_player", "$arena_win_amount"),
 #    (assign,"$arena_bet_amount",0),
 #    (assign,"$arena_win_amount",0)]],
 
-#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),(eq,"$waiting_for_arena_fight_result",1),(eq,"$arena_join_or_watch",0),(eq,"$arena_fight_won",1)],
-# "Congratulations champion. You made some pretty good moves out there. Here is your share of share of the prize money, 2 denars.", "arena_master_pre_talk",
+#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_mains_begin,arena_mains_end),(eq,"$waiting_for_arena_fight_result",1),(eq,"$arena_join_or_watch",0),(eq,"$arena_fight_won",1)],
+# "Congratulations champion. You made some pretty good moves out there. Here is your share of share of the prize money, 2 denars.", "arena_main_pre_talk",
 #   [(assign,"$waiting_for_arena_fight_result",0),(add_xp_to_troop,20,"trp_player"),(call_script, "script_troop_add_gold", "trp_player",2)]],
-#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),(eq,"$waiting_for_arena_fight_result",1),(eq,"$arena_join_or_watch",0)],
-# "That's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_master_pre_talk",[[assign,"$waiting_for_arena_fight_result"]]],
-#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_masters_begin,arena_masters_end),(eq,"$waiting_for_arena_fight_result",1)],
-# "That was exciting wasn't it? Nothing like a good fight to get the blood flowing.", "arena_master_pre_talk",[(assign,"$waiting_for_arena_fight_result",0)]],
+#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_mains_begin,arena_mains_end),(eq,"$waiting_for_arena_fight_result",1),(eq,"$arena_join_or_watch",0)],
+# "That's quite the bruise you're sporting. But don't worry; everybody gets trounced once in awhile. The important thing is to pick yourself up, dust yourself off and keep fighting. That's what champions do.", "arena_main_pre_talk",[[assign,"$waiting_for_arena_fight_result"]]],
+#  [anyone,"start", [(store_conversation_troop,reg(1)),(is_between,reg(1),arena_mains_begin,arena_mains_end),(eq,"$waiting_for_arena_fight_result",1)],
+# "That was exciting wasn't it? Nothing like a good fight to get the blood flowing.", "arena_main_pre_talk",[(assign,"$waiting_for_arena_fight_result",0)]],
 
-##  [anyone,"arena_master_melee", [], "The next arena fight will start in a while. Hurry up if you want to take part in it.", "arena_master_melee_talk",[
+##  [anyone,"arena_main_melee", [], "The next arena fight will start in a while. Hurry up if you want to take part in it.", "arena_main_melee_talk",[
 ##    (party_get_slot, ":arena_cur_tier","$current_town",slot_town_arena_melee_cur_tier),
 ##    (try_begin), #reg3 = num teams, reg4 = team size
 ##      (eq, ":arena_cur_tier", 0),
@@ -39648,12 +39648,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##      (party_get_slot, "$_team_size","$current_town",slot_town_arena_melee_3_team_size),
 ##    (try_end),
 ##   ]],
-##  [anyone|plyr,"arena_master_melee_talk", [], "I want to join the next fight", "arena_master_next_melee_join",[(assign,"$arena_join_or_watch",0)]],
-##  [anyone|plyr,"arena_master_melee_talk", [], "I would like to watch the next fight", "arena_master_next_melee_watch",
+##  [anyone|plyr,"arena_main_melee_talk", [], "I want to join the next fight", "arena_main_next_melee_join",[(assign,"$arena_join_or_watch",0)]],
+##  [anyone|plyr,"arena_main_melee_talk", [], "I would like to watch the next fight", "arena_main_next_melee_watch",
 ##   [(assign,"$arena_join_or_watch",1)]],
-##  [anyone|plyr,"arena_master_melee_talk", [], "No. perhaps later.", "arena_master_we_will_fight_not",[]],
-##  [anyone,"arena_master_we_will_fight_not", [], "Alright. Talk to me when you are ready.", "close_window",[]],
-##  [anyone,"arena_master_next_melee_join", [
+##  [anyone|plyr,"arena_main_melee_talk", [], "No. perhaps later.", "arena_main_we_will_fight_not",[]],
+##  [anyone,"arena_main_we_will_fight_not", [], "Alright. Talk to me when you are ready.", "close_window",[]],
+##  [anyone,"arena_main_next_melee_join", [
 ##    (assign,"$arena_bet_amount"),
 ##    (assign,"$arena_bet_team",0),
 ##    (party_get_slot, ":player_odds", "$g_encountered_party", slot_town_player_odds),
@@ -39682,32 +39682,32 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##      (try_end),
 ##    (try_end),
 ##    (assign, reg5, ":odds_player"),
-##    (assign, reg6, ":odds_other"),], "Do you want to place a bet on yourself? The odds against you are {reg5} to {reg6}.", "arena_master_will_you_bet",
+##    (assign, reg6, ":odds_other"),], "Do you want to place a bet on yourself? The odds against you are {reg5} to {reg6}.", "arena_main_will_you_bet",
 ##   []],
 ##
-##  [anyone|plyr,"arena_master_will_you_bet", [], "No.", "arena_master_start_fight",[]],
-##  [anyone|plyr,"arena_master_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),10)], "I want to bet 10 denars.",
-##   "arena_master_bet_placed",[(assign,"$arena_bet_amount",10),(troop_remove_gold, "trp_player",10)]],
-##  [anyone|plyr,"arena_master_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),50)], "I want to bet 50 denars.",
-##   "arena_master_bet_placed",[(assign,"$arena_bet_amount",50),(troop_remove_gold, "trp_player",50)]],
-##  [anyone|plyr,"arena_master_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),100)], "I want to bet 100 denars.",
-##   "arena_master_bet_placed",[(assign,"$arena_bet_amount",100),(troop_remove_gold, "trp_player",100)]],
-##  [anyone,"arena_master_next_melee_watch", [], "Do you want to place a bet?", "arena_master_will_you_bet",[]],
-##  [anyone,"arena_master_bet_placed", [(eq,"$arena_join_or_watch",1)], "Hmm. That's good. If you win, you'll get {reg5} denars. And which team do you want to place your bet on?", "arena_master_select_team",
+##  [anyone|plyr,"arena_main_will_you_bet", [], "No.", "arena_main_start_fight",[]],
+##  [anyone|plyr,"arena_main_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),10)], "I want to bet 10 denars.",
+##   "arena_main_bet_placed",[(assign,"$arena_bet_amount",10),(troop_remove_gold, "trp_player",10)]],
+##  [anyone|plyr,"arena_main_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),50)], "I want to bet 50 denars.",
+##   "arena_main_bet_placed",[(assign,"$arena_bet_amount",50),(troop_remove_gold, "trp_player",50)]],
+##  [anyone|plyr,"arena_main_will_you_bet", [(store_troop_gold,reg(0)),(ge,reg(0),100)], "I want to bet 100 denars.",
+##   "arena_main_bet_placed",[(assign,"$arena_bet_amount",100),(troop_remove_gold, "trp_player",100)]],
+##  [anyone,"arena_main_next_melee_watch", [], "Do you want to place a bet?", "arena_main_will_you_bet",[]],
+##  [anyone,"arena_main_bet_placed", [(eq,"$arena_join_or_watch",1)], "Hmm. That's good. If you win, you'll get {reg5} denars. And which team do you want to place your bet on?", "arena_main_select_team",
 ##   [(store_mul, "$arena_win_amount", "$arena_bet_amount", "$_num_teams"),
 ##    (val_mul, "$arena_win_amount", 9),
 ##    (val_div, "$arena_win_amount", 10),
 ##    (assign, reg5, "$arena_win_amount"),
 ##    ]],
-##  [anyone|plyr,"arena_master_select_team", [], "The red team. I have a feeling they will win this one.",
-##   "arena_master_start_fight",[(assign,"$arena_bet_team",0)]],
-##  [anyone|plyr,"arena_master_select_team", [], "The blue team. They will sweep the ground with the reds.",
-##   "arena_master_start_fight",[(assign,"$arena_bet_team",1)]],
-##  [anyone|plyr,"arena_master_select_team", [(ge,"$_num_teams",3)], "The green team. My money is on them this time.",
-##   "arena_master_start_fight",[(assign,"$arena_bet_team",2)]],
-##  [anyone|plyr,"arena_master_select_team", [(ge,"$_num_teams",4)], "The yellow team. They will be victorious.",
-##   "arena_master_start_fight",[(assign,"$arena_bet_team",3)]],
-##  [anyone,"arena_master_bet_placed", [], "That's good. Let me record that. If you win, you'll get {reg5} denars.", "arena_master_start_fight",
+##  [anyone|plyr,"arena_main_select_team", [], "The red team. I have a feeling they will win this one.",
+##   "arena_main_start_fight",[(assign,"$arena_bet_team",0)]],
+##  [anyone|plyr,"arena_main_select_team", [], "The blue team. They will sweep the ground with the reds.",
+##   "arena_main_start_fight",[(assign,"$arena_bet_team",1)]],
+##  [anyone|plyr,"arena_main_select_team", [(ge,"$_num_teams",3)], "The green team. My money is on them this time.",
+##   "arena_main_start_fight",[(assign,"$arena_bet_team",2)]],
+##  [anyone|plyr,"arena_main_select_team", [(ge,"$_num_teams",4)], "The yellow team. They will be victorious.",
+##   "arena_main_start_fight",[(assign,"$arena_bet_team",3)]],
+##  [anyone,"arena_main_bet_placed", [], "That's good. Let me record that. If you win, you'll get {reg5} denars.", "arena_main_start_fight",
 ##   [(store_mul,"$arena_win_amount", "$arena_bet_amount", "$_num_teams"),
 ##    (party_get_slot, ":player_odds", "$g_encountered_party", slot_town_player_odds),
 ##    (val_sub, "$arena_win_amount", "$arena_bet_amount"),
@@ -39719,7 +39719,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##    (assign, reg5, "$arena_win_amount"),
 ##    ]],
 ##
-##  [anyone,"arena_master_start_fight", [], "Very well. The fight starts in a moment. Good luck.", "close_window",
+##  [anyone,"arena_main_start_fight", [], "Very well. The fight starts in a moment. Good luck.", "close_window",
 ##   [
 ##    (store_encountered_party,"$current_town"),
 ##    (party_get_slot, ":arena_scene","$current_town",slot_town_arena),
@@ -39974,7 +39974,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"bandit_barter_2", [],
    "I don't have that much money with me", "bandit_barter_3b",[]],
   [anyone,"bandit_barter_3b", [],
-   "That's too bad. I guess we'll just have to sell you into slavery. Take {him/her}, lads!", "close_window",[[encounter_attack]]],
+   "That's too bad. I guess we'll just have to sell you into subordinatery. Take {him/her}, lads!", "close_window",[[encounter_attack]]],
 
   [anyone,"bandit_barter", [],
    "Hey, I've heard of you! You slaughter us freebooters like dogs, and now you expect us to let you go for a few stinking coins?\
@@ -40472,7 +40472,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 									(try_end),
 
                                     (str_store_string, s11, "@{reg20?We mostly produce {s5} here:We don't produce much here these days}.\
- If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there."),
+ If you would like to learn more, you can speak with our {reg4?guildmain:village elder}. He is nearby, right over there."),
                                     ],
    "{s10} {s11}", "close_window",[]],
 
@@ -40695,7 +40695,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (party_get_slot, ":lord", "$g_encountered_party", slot_party_money_carried_lord),
                     (party_get_slot, reg40, "$g_encountered_party", slot_party_money_carried),
 					(str_store_troop_name, s42, ":lord"),
-  ], "{My lord/My lady}, my master {s42} brings you the debt he had from you, {reg40} denars.", "money_back", [(troop_add_gold, "trp_player" , reg40),]],
+  ], "{My lord/My lady}, my main {s42} brings you the debt he had from you, {reg40} denars.", "money_back", [(troop_add_gold, "trp_player" , reg40),]],
 
   [anyone|plyr,"money_back", [
   ], "Thank you.", "close_window", [(remove_party, "$g_encountered_party"),
@@ -41708,7 +41708,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone|plyr,"start", [], "Drop your weapons and surrender if you want to live", "threaten_1",[]],
   [anyone,"threaten_1", [], "We will fight you first", "end",[[encounter_attack]]],
 
-#  [anyone|plyr,"free", [[partner_is_mercmaster]], "I need to hire some mercenaries.", "mercenaries_requested",[]],
+#  [anyone|plyr,"free", [[partner_is_mercmain]], "I need to hire some mercenaries.", "mercenaries_requested",[]],
 #  [anyone,"mercenaries_requested", [], "I have the toughest fighters in all Calradia.", "buy_mercenaries",[[change_screen_buy_mercenaries]]],
 #  [anyone,"buy_mercenaries", [], "Anything else?", "free",[]],
 

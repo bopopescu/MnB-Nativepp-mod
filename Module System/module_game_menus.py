@@ -529,7 +529,7 @@ game_menus = [
 ##           (troop_raise_skill, "$g_player_troop", skl_riding, 3),
 ##           (troop_raise_skill, "$g_player_troop", skl_power_strike, 1),
 ##           (troop_raise_skill, "$g_player_troop", skl_power_draw, 5),
-##           (troop_raise_skill, "$g_player_troop", skl_weapon_master, 4),
+##           (troop_raise_skill, "$g_player_troop", skl_weapon_main, 4),
 ##           (troop_raise_skill, "$g_player_troop", skl_ironflesh, 1),
 ##           (troop_raise_skill, "$g_player_troop", skl_horse_archery, 6),
 ##           (troop_raise_proficiency_linear, "$g_player_troop", wpt_one_handed_weapon, 70),
@@ -549,10 +549,10 @@ game_menus = [
 ##        (set_visitor,33,"trp_tutorial_fighter_2"),
 ##        (set_visitor,34,"trp_tutorial_fighter_3"),
 ##        (set_visitor,35,"trp_tutorial_fighter_4"),
-##        (set_visitor,40,"trp_tutorial_master_archer"),
+##        (set_visitor,40,"trp_tutorial_main_archer"),
 ##        (set_visitor,41,"trp_tutorial_archer_1"),
 ##        (set_visitor,42,"trp_tutorial_archer_1"),
-##        (set_visitor,60,"trp_tutorial_master_horseman"),
+##        (set_visitor,60,"trp_tutorial_main_horseman"),
 ##        (set_visitor,61,"trp_tutorial_rider_1"),
 ##        (set_visitor,62,"trp_tutorial_rider_1"),
 ##        (set_visitor,63,"trp_tutorial_rider_2"),
@@ -600,7 +600,7 @@ game_menus = [
         (troop_raise_skill, "$g_player_troop", skl_riding, 3),
         (troop_raise_skill, "$g_player_troop", skl_power_strike, 1),
         (troop_raise_skill, "$g_player_troop", skl_power_draw, 5),
-        (troop_raise_skill, "$g_player_troop", skl_weapon_master, 4),
+        (troop_raise_skill, "$g_player_troop", skl_weapon_main, 4),
         (troop_raise_skill, "$g_player_troop", skl_ironflesh, 1),
         (troop_raise_skill, "$g_player_troop", skl_horse_archery, 6),
         (troop_raise_proficiency_linear, "$g_player_troop", wpt_one_handed_weapon, 70),
@@ -620,10 +620,10 @@ game_menus = [
         (set_visitor,33,"trp_tutorial_fighter_2"),
         (set_visitor,34,"trp_tutorial_fighter_3"),
         (set_visitor,35,"trp_tutorial_fighter_4"),
-        (set_visitor,40,"trp_tutorial_master_archer"),
+        (set_visitor,40,"trp_tutorial_main_archer"),
         (set_visitor,41,"trp_tutorial_archer_1"),
         (set_visitor,42,"trp_tutorial_archer_1"),
-        (set_visitor,60,"trp_tutorial_master_horseman"),
+        (set_visitor,60,"trp_tutorial_main_horseman"),
         (set_visitor,61,"trp_tutorial_rider_1"),
         (set_visitor,62,"trp_tutorial_rider_1"),
         (set_visitor,63,"trp_tutorial_rider_2"),
@@ -838,7 +838,7 @@ game_menus = [
 ##     (troop_raise_skill, "trp_player", skl_riding, -1000),
 ##     (troop_raise_skill, "trp_player", skl_power_strike, -1000),
 ##     (troop_raise_skill, "trp_player", skl_power_throw, -1000),
-##     (troop_raise_skill, "trp_player", skl_weapon_master, -1000),
+##     (troop_raise_skill, "trp_player", skl_weapon_main, -1000),
 ##     (troop_raise_skill, "trp_player", skl_horse_archery, -1000),
 ##     (troop_raise_skill, "trp_player", skl_ironflesh, -1000),
 ##     (troop_raise_proficiency_linear, "trp_player", wpt_one_handed_weapon, -10000),
@@ -928,7 +928,7 @@ game_menus = [
 ##       (troop_raise_skill, "$g_player_troop", skl_riding, 3),
 ##       (troop_raise_skill, "$g_player_troop", skl_power_strike, 4),
 ##       (troop_raise_skill, "$g_player_troop", skl_power_draw, 5),
-##       (troop_raise_skill, "$g_player_troop", skl_weapon_master, 4),    
+##       (troop_raise_skill, "$g_player_troop", skl_weapon_main, 4),    
 ##       (troop_raise_skill, "$g_player_troop", skl_ironflesh, 6),
 ##       (troop_raise_proficiency_linear, "$g_player_troop", wpt_one_handed_weapon, 100),
 ##       (troop_raise_proficiency_linear, "$g_player_troop", wpt_two_handed_weapon, 30),
@@ -1225,7 +1225,7 @@ game_menus = [
       (assign, reg3, "$character_gender"),
       (str_store_string,s11,"@As a {reg3?girl:boy} growing out of childhood,\
  you apprenticed with a local craftsman to learn a trade. After years of hard work and study under your\
- new master, he promoted you to journeyman and employed you as a fully paid craftsman for as long as\
+ new main, he promoted you to journeyman and employed you as a fully paid craftsman for as long as\
  you wished to stay."),
 	(jump_to_menu,"mnu_start_character_3"),
     ]),
@@ -1408,7 +1408,7 @@ game_menus = [
       (str_store_string,s12,"@Though the distinction felt sudden to you,\
  somewhere along the way you had become a {s13}, and the whole world seemed to change around you.\
  Heeding the call of the open road, you travelled from village to village buying and selling what you could.\
- It was not a rich existence, but you became a master at haggling even the most miserly elders into\
+ It was not a rich existence, but you became a main at haggling even the most miserly elders into\
  giving you a good price. Soon, you knew, you would be well-placed to start your own trading empire..."),
 	(jump_to_menu,"mnu_start_character_4"),
         ]),
@@ -1419,7 +1419,7 @@ game_menus = [
       (str_store_string,s12,"@Though the distinction felt sudden to you,\
  somewhere along the way you had become a {s13}, and the whole world seemed to change around you.\
  You pursued a career as a smith, crafting items of function and beauty out of simple metal.\
- As time wore on you became a master of your trade, and fine work started to fetch fine prices.\
+ As time wore on you became a main of your trade, and fine work started to fetch fine prices.\
  With food in your belly and logs on your fire, you could take pride in your work and your growing reputation."),
 	(jump_to_menu,"mnu_start_character_4"),
         ]),
@@ -1615,7 +1615,7 @@ game_menus = [
         (eq,"$character_gender",tf_male),
         (troop_raise_attribute, "trp_player",ca_intelligence,1),
         (troop_raise_attribute, "trp_player",ca_charisma,2),
-        (troop_raise_skill, "trp_player",skl_weapon_master,1),
+        (troop_raise_skill, "trp_player",skl_weapon_main,1),
         (troop_raise_skill, "trp_player",skl_power_strike,1),
         (troop_raise_skill, "trp_player",skl_riding,1),
         (troop_raise_skill, "trp_player",skl_tactics,1),
@@ -1696,7 +1696,7 @@ game_menus = [
         (troop_raise_attribute, "trp_player",ca_charisma,1),
         (troop_raise_skill, "trp_player","skl_ironflesh",1),
         (troop_raise_skill, "trp_player","skl_power_strike",1),
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
         (troop_raise_skill, "trp_player","skl_leadership",1),
         (troop_raise_skill, "trp_player","skl_trainer_replacement",1),
         (troop_raise_proficiency, "trp_player",wpt_one_handed_weapon,10),
@@ -1870,7 +1870,7 @@ game_menus = [
 ##        (eq,"$background_answer_2",6),
 ##        (troop_raise_attribute, "trp_player",ca_charisma,3),
 ##        (troop_raise_attribute, "trp_player",ca_agility,1),
-##        (troop_raise_skill, "trp_player",skl_weapon_master,1),
+##        (troop_raise_skill, "trp_player",skl_weapon_main,1),
 ##        (troop_raise_proficiency, "trp_player",0,15),
 ##        (troop_raise_proficiency, "trp_player",2,10),
 ##        (troop_raise_proficiency, "trp_player",4,10),
@@ -1919,7 +1919,7 @@ game_menus = [
 ##    (else_try),
 ##        (eq,"$background_answer_3",2),
 ##        (troop_raise_attribute, "trp_player",ca_agility,1),
-##        (troop_raise_skill, "trp_player",skl_weapon_master,1),
+##        (troop_raise_skill, "trp_player",skl_weapon_main,1),
 ##        (troop_raise_skill, "trp_player",skl_shield,1),
 ##        (try_begin),
 ##        (this_or_next|player_has_item,"itm_hide_boots"),
@@ -1960,7 +1960,7 @@ game_menus = [
         (troop_raise_attribute, "trp_player",ca_strength,1),
         (troop_raise_attribute, "trp_player",ca_intelligence,1),
 
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
         (troop_raise_skill, "trp_player","skl_engineer",1),
         (troop_raise_skill, "trp_player","skl_tactics",1),
         (troop_raise_skill, "trp_player","skl_trade",1),
@@ -2026,7 +2026,7 @@ game_menus = [
         (eq,"$background_answer_3",cb3_troubadour),
         (troop_raise_attribute, "trp_player",ca_charisma,2),
            
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
         (troop_raise_skill, "trp_player","skl_persuasion",1),
         (troop_raise_skill, "trp_player","skl_leadership",1),
         (troop_raise_skill, "trp_player","skl_pathfinding",1),
@@ -2049,7 +2049,7 @@ game_menus = [
         (troop_raise_attribute, "trp_player",ca_strength,1),
         (troop_raise_attribute, "trp_player",ca_agility,1),
         (troop_raise_skill, "trp_player","skl_riding",1),
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
         (troop_raise_skill, "trp_player","skl_power_strike",1),
         (troop_raise_skill, "trp_player","skl_leadership",1),
 
@@ -2112,7 +2112,7 @@ game_menus = [
         (eq,"$background_answer_3",cb3_student),
         (troop_raise_attribute, "trp_player",ca_intelligence,2),
            
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
         (troop_raise_skill, "trp_player","skl_surgery",1),
         (troop_raise_skill, "trp_player","skl_wound_treatment",1),
         (troop_raise_skill, "trp_player","skl_persuasion",1),
@@ -2162,7 +2162,7 @@ game_menus = [
         (eq,"$background_answer_4",cb4_disown),
         (troop_raise_attribute, "trp_player",ca_strength,1),
         (troop_raise_attribute, "trp_player",ca_intelligence,1),
-        (troop_raise_skill, "trp_player","skl_weapon_master",1),
+        (troop_raise_skill, "trp_player","skl_weapon_main",1),
       (else_try),
         (eq,"$background_answer_4",cb4_greed),
         (troop_raise_attribute, "trp_player",ca_agility,1),
@@ -3912,11 +3912,11 @@ game_menus = [
         (jump_to_menu, "mnu_camp_action_read_book_start"),
         ]
        ),
-      ("action_read_book_6",[(player_has_item, "itm_book_weapon_mastery"),
-                             (item_slot_eq, "itm_book_weapon_mastery", slot_item_book_read, 0),
-                             (str_store_item_name, s1, "itm_book_weapon_mastery"),
+      ("action_read_book_6",[(player_has_item, "itm_book_weapon_mainy"),
+                             (item_slot_eq, "itm_book_weapon_mainy", slot_item_book_read, 0),
+                             (str_store_item_name, s1, "itm_book_weapon_mainy"),
                              ],"{s1}.",
-       [(assign, "$temp", "itm_book_weapon_mastery"),
+       [(assign, "$temp", "itm_book_weapon_mainy"),
         (jump_to_menu, "mnu_camp_action_read_book_start"),
         ]
        ),
@@ -12489,7 +12489,7 @@ game_menus = [
       "Visit your {s3}.",
       [
         (store_sub, ":town_order", "$current_town", towns_begin),
-		(store_add, ":master_craftsman", "trp_town_1_master_craftsman", ":town_order"),
+		(store_add, ":main_craftsman", "trp_town_1_main_craftsman", ":town_order"),
         (party_get_slot, ":item_produced", "$current_town", slot_center_player_enterprise),
 		(assign, ":enterprise_scene", "scn_enterprise_mill"),
 		(try_begin),
@@ -12523,7 +12523,7 @@ game_menus = [
         (modify_visitors_at_site,":enterprise_scene"),
 		(reset_visitors),
         (set_visitor,0,"trp_player"),
-        (set_visitor,17,":master_craftsman"),
+        (set_visitor,17,":main_craftsman"),
         (set_jump_mission,"mt_town_default"),
         (jump_to_scene,":enterprise_scene"),
         (change_screen_mission),
@@ -12848,36 +12848,36 @@ game_menus = [
         (jump_to_menu, "mnu_collect_taxes"),
       ]),
       ##diplomacy begin
-      ("dplmc_guild_master_meeting",
+      ("dplmc_guild_main_meeting",
        [(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	    ##nested diplomacy start+
-		#rubik had a good idea: only enable this after meeting the guild master
-		(assign, ":can_meet_guild_master", 0),
+		#rubik had a good idea: only enable this after meeting the guild main
+		(assign, ":can_meet_guild_main", 0),
 		(try_begin),
-			#Always can jump to guild master in cheat mode.
+			#Always can jump to guild main in cheat mode.
 			(eq, "$cheat_mode", 1),
-			(assign, ":can_meet_guild_master", 1),
+			(assign, ":can_meet_guild_main", 1),
 		(else_try),
-			#Can jump to guild master after meeting him once.
-			(party_get_slot, ":guild_master_troop", "$current_town",slot_town_elder),
-			(ge, ":guild_master_troop", 1),
-			(neg|troop_slot_eq, ":guild_master_troop", slot_troop_met, 0),
-			(assign, ":can_meet_guild_master", 1),
+			#Can jump to guild main after meeting him once.
+			(party_get_slot, ":guild_main_troop", "$current_town",slot_town_elder),
+			(ge, ":guild_main_troop", 1),
+			(neg|troop_slot_eq, ":guild_main_troop", slot_troop_met, 0),
+			(assign, ":can_meet_guild_main", 1),
 		(else_try),
 			#Always enable this in Praven for the sake of playability, since
-			#the guild master there is weirdly hard to find.
+			#the guild main there is weirdly hard to find.
 			(this_or_next|eq, "$current_town", "p_town_6"),
 			#Also enable in the starting town, to avoid confusing players into
 			#thinking the menu item doesn't exist.
 			(eq, "$g_starting_town", "$current_town"),
-			(assign, ":can_meet_guild_master", 1),
+			(assign, ":can_meet_guild_main", 1),
 		(try_end),
-		(neq, ":can_meet_guild_master", 0),
+		(neq, ":can_meet_guild_main", 0),
 		##nested diplomacy end+
         (this_or_next|eq,"$entry_to_town_forbidden",0),
         (eq, "$sneaked_into_town",1),
 		],
-       "Meet the Guild Master.",
+       "Meet the Guild Main.",
        [
          (try_begin),
            (call_script, "script_cf_enter_center_location_bandit_check"),
@@ -12886,33 +12886,33 @@ game_menus = [
            (modify_visitors_at_site, ":town_scene"),
            (reset_visitors),
            
-           (party_get_slot, ":guild_master_troop", "$current_town",slot_town_elder),
-           (set_visitor,11,":guild_master_troop"),
+           (party_get_slot, ":guild_main_troop", "$current_town",slot_town_elder),
+           (set_visitor,11,":guild_main_troop"),
            
            (set_jump_mission,"mt_town_center"),
            (jump_to_scene, ":town_scene"),
-           (change_screen_map_conversation, ":guild_master_troop"),
+           (change_screen_map_conversation, ":guild_main_troop"),
          (try_end),
      ]),
 	##nested diplomacy start+
-	#If you can't jump to the guild master, explain why
-    ("dplmc_guild_master_meeting_denied",
+	#If you can't jump to the guild main, explain why
+    ("dplmc_guild_main_meeting_denied",
 	[	
 		#Only show this when the player would get the rest of the town menu
 		(party_slot_eq,"$current_town",slot_party_type, spt_town),
 		(this_or_next|eq,"$entry_to_town_forbidden",0),
         (eq, "$sneaked_into_town",1),
-	    #There is a valid guild master, and you haven't met him,
+	    #There is a valid guild main, and you haven't met him,
 		#and there isn't another condition that enables the jump.
-		(party_get_slot, ":guild_master_troop", "$current_town",slot_town_elder),
-		(gt, ":guild_master_troop", 0),
+		(party_get_slot, ":guild_main_troop", "$current_town",slot_town_elder),
+		(gt, ":guild_main_troop", 0),
 		(eq, "$cheat_mode", 0),
 		(neq, "$g_starting_town", "$current_town"),
 		(neq, "$current_town", "p_town_6"),
-		(troop_slot_eq, ":guild_master_troop", slot_troop_met, 0),
+		(troop_slot_eq, ":guild_main_troop", slot_troop_met, 0),
 		(disable_menu_option),
 		],
-       "You have not met the Guild Master yet.",
+       "You have not met the Guild Main yet.",
        [
      ]),
 	 ##nested diplomacy end+
@@ -13272,7 +13272,7 @@ game_menus = [
             (str_store_string, s1, "@Victory is yours! You have won this melee, but now you must prepare yourself for the next round. "),
           (else_try),
             (eq, "$g_tournament_player_team_won", 0),
-            (str_store_string, s1, "@You have been bested in this melee, but the master of ceremonies declares a recognition of your skill and bravery, allowing you to take part in the next round. "),
+            (str_store_string, s1, "@You have been bested in this melee, but the main of ceremonies declares a recognition of your skill and bravery, allowing you to take part in the next round. "),
           (try_end),
           (assign, reg1, ":num_participants"),
           (store_add, reg0, "$g_tournament_cur_tier", 1),

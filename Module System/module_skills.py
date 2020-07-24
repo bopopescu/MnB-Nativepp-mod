@@ -29,7 +29,7 @@ from header_skills import *
 # Riding (25)
 # Athletics (26)
 # Shield (27)
-# Weapon Master (28)
+# Weapon Main (28)
 # Power Draw (34)
 # Power Throw (35)
 # Power Strike (36)
@@ -66,7 +66,7 @@ skills = [
   ("riding","Riding",sf_base_att_agi,10,"Enables you to ride horses of higher difficulty levels and increases your riding speed and manuever. (Personal skill)"),
   ("athletics","Athletics",sf_base_att_agi,10,"Improves your running speed. (Personal skill)"),
   ("shield","Shield",sf_base_att_agi,10,"Reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)"),
-  ("weapon_master","Weapon Master",sf_base_att_agi,10,"Makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)"),
+  ("weapon_main","Weapon Main",sf_base_att_agi,10,"Makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)"),
   ("reserved_9","Reserved Skill 9",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_10","Reserved Skill 10",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_11","Reserved Skill 11",sf_base_att_agi|sf_inactive,10,"This is a reserved skill."), 
